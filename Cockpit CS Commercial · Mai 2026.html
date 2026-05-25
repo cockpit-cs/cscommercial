@@ -1,0 +1,2275 @@
+<!DOCTYPE html>
+<!-- saved from url=(0244)file:///Users/cami/Library/Application%20Support/Claude/local-agent-mode-sessions/61b1c741-cc22-46c9-96ac-4c2d956c143a/44c0eadb-272d-4481-a977-77e57cc25924/local_fc9355d8-1761-4e80-a217-7a0b0b4cf8ed/outputs/Cockpit_CS_Commercial_Mai2026_v2.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cockpit CS Commercial · Mai 2026</title>
+<style>
+  :root {
+    --bg: #F2EFE9;
+    --paper: #FAF7F2;
+    --ink: #1A1A1A;
+    --gray-soft: #8C857A;
+    --gray-mid: #6B6259;
+    --gray-line: #DDD6CB;
+    --green: #2D7A4D; --green-bg: #E5F0E8; --green-line: #2D7A4D;
+    --red: #B23A3A; --red-bg: #F5E6E5; --red-line: #B23A3A;
+    --amber: #B58A2D; --amber-bg: #F7EFD8; --amber-line: #B58A2D;
+    --blue: #2D5B85; --blue-bg: #E2EBF2; --blue-line: #2D5B85;
+    --neutral: #888;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg);
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", sans-serif;
+    color: var(--ink); font-size: 14px; line-height: 1.5;
+    padding: 32px 24px;
+  }
+  .page { max-width: 1100px; margin: 0 auto; }
+  .header { display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 16px; margin-bottom: 24px; border-bottom: 1px solid var(--gray-line); }
+  .header-left .eyebrow { font-size: 11px; letter-spacing: 1px; color: var(--gray-soft); text-transform: uppercase; margin-bottom: 4px; }
+  .header-left h1 { font-size: 22px; margin: 0 0 4px 0; font-weight: 700; }
+  .header-left .meta { font-size: 13px; color: var(--gray-mid); }
+  .header-right { text-align: right; }
+  .header-right .name { font-weight: 600; font-size: 13px; }
+  .header-right .meeting { font-size: 12px; color: var(--gray-mid); }
+  .tabs { display: flex; gap: 4px; margin-bottom: 20px; border-bottom: 1px solid var(--gray-line); padding-bottom: 0; flex-wrap: wrap; }
+  .tab { padding: 10px 14px; font-size: 13px; color: var(--gray-mid); cursor: pointer; border-bottom: 2px solid transparent; user-select: none; transition: all 0.15s; }
+  .tab:hover { color: var(--ink); }
+  .tab.active { color: var(--ink); font-weight: 600; border-bottom-color: var(--ink); }
+  .section-label { font-size: 10px; letter-spacing: 1px; color: var(--gray-soft); text-transform: uppercase; margin-bottom: 10px; margin-top: 28px; }
+  .section-label:first-child { margin-top: 0; }
+  .card-grid { display: grid; gap: 12px; margin-bottom: 8px; }
+  .card-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .card-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .card-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .card { background: var(--paper); border-radius: 4px; padding: 14px 16px; border-left: 3px solid var(--gray-line); }
+  .card.green { border-left-color: var(--green); }
+  .card.red { border-left-color: var(--red); }
+  .card.amber { border-left-color: var(--amber); }
+  .card.blue { border-left-color: var(--blue); }
+  .card .badge { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 600; margin-bottom: 6px; }
+  .card .badge.green { background: var(--green-bg); color: var(--green); }
+  .card .badge.red { background: var(--red-bg); color: var(--red); }
+  .card .badge.amber { background: var(--amber-bg); color: var(--amber); }
+  .card .badge.blue { background: var(--blue-bg); color: var(--blue); }
+  .card .label { font-size: 12px; color: var(--gray-mid); margin-bottom: 4px; }
+  .card .big { font-size: 28px; font-weight: 700; line-height: 1.1; margin-bottom: 2px; }
+  .card .big.red { color: var(--red); }
+  .card .big.green { color: var(--green); }
+  .card .sublabel { font-size: 11px; color: var(--gray-mid); }
+  .card .bar { height: 4px; background: var(--gray-line); border-radius: 2px; margin-top: 8px; overflow: hidden; }
+  .card .bar > div { height: 100%; background: var(--green); }
+  .card .bar.amber > div { background: var(--amber); }
+  .card .bar.red > div { background: var(--red); }
+  .card .bar.blue > div { background: var(--blue); }
+  table { width: 100%; border-collapse: collapse; background: var(--paper); font-size: 12.5px; }
+  thead th { text-align: left; font-weight: 600; font-size: 10px; letter-spacing: 0.5px; color: var(--gray-soft); text-transform: uppercase; padding: 10px 12px; border-bottom: 1px solid var(--gray-line); background: var(--paper); }
+  tbody td { padding: 10px 12px; border-bottom: 1px solid var(--gray-line); vertical-align: top; }
+  tbody tr:last-child td { border-bottom: 0; }
+  tbody tr.warn td { background: rgba(178,58,58,0.04); }
+  td .pill { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 11px; font-weight: 500; }
+  td .pill.green { background: var(--green-bg); color: var(--green); }
+  td .pill.red { background: var(--red-bg); color: var(--red); }
+  td .pill.amber { background: var(--amber-bg); color: var(--amber); }
+  td .pill.blue { background: var(--blue-bg); color: var(--blue); }
+  td .pill.neutral { background: #EEE; color: #555; }
+  .callout { padding: 12px 14px; border-radius: 4px; margin: 12px 0 8px; font-size: 13px; line-height: 1.5; border-left: 3px solid; }
+  .callout.blue { background: var(--blue-bg); color: #1f3f5d; border-left-color: var(--blue); }
+  .callout.amber { background: var(--amber-bg); color: #6b5212; border-left-color: var(--amber); }
+  .callout.red { background: var(--red-bg); color: #7d2828; border-left-color: var(--red); }
+  .callout.green { background: var(--green-bg); color: #1c5235; border-left-color: var(--green); }
+  .callout strong { font-weight: 700; }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+  .cs-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .cs-card { background: var(--paper); padding: 16px; border-radius: 4px; border-left: 3px solid var(--gray-line); }
+  .cs-card h3 { margin: 0 0 4px 0; font-size: 15px; }
+  .cs-card .vs { font-size: 12px; color: var(--gray-mid); margin-bottom: 12px; }
+  .cs-card h4 { margin: 12px 0 6px 0; font-size: 10px; letter-spacing: 0.5px; color: var(--gray-soft); text-transform: uppercase; }
+  .cs-card .list-item { display: flex; align-items: flex-start; gap: 6px; font-size: 12.5px; margin-bottom: 4px; }
+  .cs-card .arrow { font-weight: 600; line-height: 1.4; }
+  .cs-card .arrow.down { color: var(--red); }
+  .cs-card .arrow.up { color: var(--green); }
+  .cs-card .arrow.alert { color: var(--amber); }
+  .cs-card .conta-line { display: flex; align-items: flex-start; gap: 6px; font-size: 12px; margin-bottom: 4px; line-height: 1.4; }
+  .small-table { font-size: 12px; }
+  .scroll-x { overflow-x: auto; }
+  .bu-tag { font-size: 10px; font-weight: 500; color: var(--gray-mid); background: var(--gray-line); border-radius: 3px; padding: 1px 5px; margin-left: 4px; vertical-align: middle; }
+</style>
+
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <div class="header-left">
+      <div class="eyebrow">Customer Success · Commercial</div>
+      <h1>Cockpit pós-venda</h1>
+      <div class="meta" id="header-meta">Jan–Abr 2026 · 468 calls válidas · 4 CSMs · 106 contas atendidas</div>
+    </div>
+    <div class="header-right">
+      <div class="name">Camila Fontanella</div>
+      <div class="meeting">Reunião semanal · Mai 2026</div>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <div class="tab" data-tab="exec">① Execução</div>
+    <div class="tab" data-tab="aberto">② Em aberto</div>
+    <div class="tab" data-tab="qual">③ Qualidade</div>
+    <div class="tab" data-tab="qres">④ Qualidade × Resultado</div>
+    <div class="tab" data-tab="qcs">⑤ Qualidade por CS</div>
+    <div class="tab active" data-tab="risco">⑥ Risco churn</div>
+  </div>
+
+  <div class="tab-content" id="tab-exec"><div class="section-label">Cobertura — base de contas atendidas (106 contas)</div><div class="card-grid cols-4"><div class="card green">
+      <span class="badge green">cobertura de cliente</span>
+      <div class="label">Contas com calls no período</div>
+      <div class="big">106</div>
+      <div class="sublabel">100% das contas commercial em pasta</div>
+    </div><div class="card amber">
+      <span class="badge amber">cobertura estruturada</span>
+      <div class="label">Contas com pelo menos 1 call ≥6</div>
+      <div class="big">79.2%</div>
+      <div class="sublabel">84/106 contas atingem o piso</div>
+      <div class="bar amber"><div style="width:79.2%"></div></div>
+    </div><div class="card red">
+      <div class="label">QBRs identificados</div>
+      <div class="big red">3</div>
+      <div class="sublabel">baixa execução de QBR</div>
+    </div></div><div class="callout amber"><strong>Composição da operação:</strong> Sales Engagement é o tipo de call dominante (56.6% das 468 calls válidas ≥10 min), invertendo o padrão Enterprise. Indica carteira em fase inicial — muitos onboardings e configurações ativos.</div><div class="section-label">Cobertura por tipo de call · classificado pelo conteúdo da conversa</div><table>
+    <thead><tr><th>Tipo de Call</th><th>Volume</th><th>% do total</th><th>Nota Média</th><th>Duração Média</th><th>Leitura</th></tr></thead>
+    <tbody><tr>
+      <td><strong>Sales Engagement</strong></td>
+      <td>265</td>
+      <td>56.6%</td>
+      <td><span class="pill amber">6,55</span></td>
+      <td>41,5 min</td>
+      <td style="color:var(--gray-mid)">Treinamento, configuração, validação</td>
+    </tr><tr>
+      <td><strong>Sales Performance</strong></td>
+      <td>200</td>
+      <td>42.7%</td>
+      <td><span class="pill green">7,39</span></td>
+      <td>37,5 min</td>
+      <td style="color:var(--gray-mid)">Cadência sobre resultados de funil</td>
+    </tr><tr>
+      <td><strong>QBR</strong></td>
+      <td>3</td>
+      <td>0.6%</td>
+      <td><span class="pill green">8,00</span></td>
+      <td>26,6 min</td>
+      <td style="color:var(--gray-mid)">Review estratégico trimestral</td>
+    </tr></tbody>
+  </table><div class="callout blue"><strong>Observação:</strong> Sales Performance só pontua melhor (7.39) porque a forma de avaliar valoriza dados/métricas — naturalmente mais presentes em SP. SE com nota 6.55 não necessariamente significa execução pior, mas que falta padrão de capturar evidências didáticas/de validação na conversa.</div><div class="section-label">Cobertura por CS</div><table>
+    <thead><tr><th>CS</th><th>Calls</th><th>Nota Média</th><th>% &lt;7</th><th>Fala Cliente</th><th>Duração Média</th></tr></thead>
+    <tbody><tr>
+      <td>Macir Junior</td>
+      <td>96</td>
+      <td><span class="pill amber">6,67</span></td>
+      <td>33,3%</td>
+      <td>41,7%</td>
+      <td>38,0 min</td>
+    </tr><tr>
+      <td>Rafael Ferreira</td>
+      <td>149</td>
+      <td><span class="pill amber">6,68</span></td>
+      <td>28,9%</td>
+      <td>37,8%</td>
+      <td>41,4 min</td>
+    </tr><tr>
+      <td>Thiago Garcia</td>
+      <td>160</td>
+      <td><span class="pill amber">6,77</span></td>
+      <td>33,8%</td>
+      <td>36,5%</td>
+      <td>37,7 min</td>
+    </tr><tr>
+      <td>Victor Reis</td>
+      <td>83</td>
+      <td><span class="pill amber">6,67</span></td>
+      <td>20,5%</td>
+      <td>38,6%</td>
+      <td>36,0 min</td>
+    </tr></tbody></table></div>
+  <div class="tab-content" id="tab-aberto"><div class="section-label">Atividades em aberto · contas em risco Q2 sem cadência ativa</div><div class="card-grid cols-4"><div class="card red">
+    <div class="label">Contas em risco Q2 sem cadência ativa</div>
+    <div class="big red">10</div>
+    <div class="sublabel">&lt;3 calls OU sem call há +30 dias</div>
+  </div><div class="card amber">
+    <div class="label">Total contas com calls em risco</div>
+    <div class="big">29</div>
+    <div class="sublabel">no Q2 2026 (abr-mai-jun)</div>
+  </div><div class="card blue">
+    <div class="label">Motivo dominante (inferido)</div>
+    <div class="big" style="font-size:18px;line-height:1.3">Problema ou falta de dados (cliente não compartilha)</div>
+    <div class="sublabel">9 contas · inferido do CSV GTM + scorecard</div>
+  </div><div class="card amber">
+    <div class="label">Reanálise prioritária</div>
+    <div class="big">10</div>
+    <div class="sublabel">contas listadas abaixo</div>
+  </div></div><div class="callout amber"><strong>Como interpretar:</strong> contas em Churn ou Redução no Q2 cuja cadência de call é insuficiente — ou tem &lt;3 calls no período Jan-Abr, ou a última call foi há mais de 30 dias da virada do mês. São casos onde o salvamento exige reanálise antes do fim do aviso prévio.</div><div class="section-label">Contas em risco Q2 sem cadência ativa · prioridade alta</div><table><thead><tr>
+    <th>Cliente</th><th>CS</th><th>Nota</th><th>Nº Calls</th><th>Dias s/ call</th><th>Mês Churn</th><th>Motivo Inferido</th><th>Risco (R$)</th><th>Plano Sugerido</th>
+  </tr></thead><tbody><tr class="warn">
+      <td><strong>ALICE</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">8,00</span></td>
+      <td>1</td>
+      <td>85</td>
+      <td>mai.</td>
+      <td style="color:var(--gray-mid)">Sem outcome demonstrado em 3M</td>
+      <td><span class="pill red">R$ 139K</span></td>
+      <td style="color:var(--gray-mid)">QBR de diagnóstico de funil · workshop conversão Acc→Opp · plano com vendas do cliente</td>
+    </tr><tr class="warn">
+      <td><strong>GALCORR</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill amber">6,00</span></td>
+      <td>1</td>
+      <td>92</td>
+      <td>abr.</td>
+      <td style="color:var(--gray-mid)">Problema ou falta de dados (cliente não compartilha)</td>
+      <td><span class="pill red">R$ 126K</span></td>
+      <td style="color:var(--gray-mid)">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr class="warn">
+      <td><strong>PULSUS</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill green">7,33</span></td>
+      <td>3</td>
+      <td>64</td>
+      <td>mai.</td>
+      <td style="color:var(--gray-mid)">Falta controle de funil (cliente sem CRM)</td>
+      <td><span class="pill red">R$ 117K</span></td>
+      <td style="color:var(--gray-mid)">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr class="warn">
+      <td><strong>GRUPO TPC</strong></td>
+      <td>Victor Reis</td>
+      <td><span class="pill green">7,00</span></td>
+      <td>2</td>
+      <td>-6</td>
+      <td>abr.</td>
+      <td style="color:var(--gray-mid)">Problema ou falta de dados (cliente não compartilha)</td>
+      <td><span class="pill red">R$ 106K</span></td>
+      <td style="color:var(--gray-mid)">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr class="warn">
+      <td><strong>Almata Química</strong></td>
+      <td>Victor Reis</td>
+      <td><span class="pill amber">6,50</span></td>
+      <td>6</td>
+      <td>60</td>
+      <td>mai.</td>
+      <td style="color:var(--gray-mid)">Em fase de implantação - sub-aproveitado</td>
+      <td><span class="pill red">R$ 95K</span></td>
+      <td style="color:var(--gray-mid)">Acelerar onboarding · validação de target accounts · QBR 30/60/90</td>
+    </tr><tr class="warn">
+      <td><strong>Madripel Embalagens</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill red">5,75</span></td>
+      <td>4</td>
+      <td>64</td>
+      <td>jun.</td>
+      <td style="color:var(--gray-mid)">Cliente não aderente / sub-utilização</td>
+      <td><span class="pill red">R$ 90K</span></td>
+      <td style="color:var(--gray-mid)">Reuniões executivas com sponsor · plano de adoção por usuário</td>
+    </tr><tr class="warn">
+      <td><strong>PRESTEX</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill red">5,33</span></td>
+      <td>3</td>
+      <td>50</td>
+      <td>mai.</td>
+      <td style="color:var(--gray-mid)">Problema ou falta de dados (cliente não compartilha)</td>
+      <td><span class="pill red">R$ 66K</span></td>
+      <td style="color:var(--gray-mid)">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr class="warn">
+      <td><strong>DEEP ESG</strong></td>
+      <td>Rafael Ferreira</td>
+      <td><span class="pill amber">6,50</span></td>
+      <td>2</td>
+      <td>-3</td>
+      <td>mai.</td>
+      <td style="color:var(--gray-mid)">Problema ou falta de dados (cliente não compartilha)</td>
+      <td><span class="pill red">—</span></td>
+      <td style="color:var(--gray-mid)">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr class="warn">
+      <td><strong>OCTADESK</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill amber">6,00</span></td>
+      <td>1</td>
+      <td>1</td>
+      <td>abr.</td>
+      <td style="color:var(--gray-mid)">Problema ou falta de dados (cliente não compartilha)</td>
+      <td><span class="pill red">—</span></td>
+      <td style="color:var(--gray-mid)">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr class="warn">
+      <td><strong>ORACLE DO BRASIL SISTEMAS LTDA</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill green">7,00</span></td>
+      <td>2</td>
+      <td>53</td>
+      <td>abr.</td>
+      <td style="color:var(--gray-mid)">Problema ou falta de dados (cliente não compartilha)</td>
+      <td><span class="pill red">—</span></td>
+      <td style="color:var(--gray-mid)">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr></tbody></table><div class="section-label">Todas as contas em risco Q2 com calls analisadas</div><table><thead><tr>
+    <th>Cliente</th><th>CS</th><th>CSM (GRR)</th><th>Nota</th><th>Mês Churn</th><th>Tipo</th><th>Motivo Inferido</th><th>Risco (R$)</th><th>Plano Sugerido</th>
+  </tr></thead><tbody><tr>
+      <td><strong>DreamShaper (BU: Educbank)</strong></td>
+      <td>Macir Junior</td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">8,00</span></td>
+      <td>jun.</td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Sem outcome demonstrado em 3M</td>
+      <td>R$ 144K</td>
+      <td style="color:var(--gray-mid)">QBR de diagnóstico de funil · workshop conversão Acc→Opp · plano com vendas do cliente</td>
+    </tr><tr>
+      <td><strong>DreamShaper (BU: Educbank)</strong></td>
+      <td>Macir Junior</td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">8,00</span></td>
+      <td>jun.</td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Sem outcome demonstrado em 3M</td>
+      <td>R$ 144K</td>
+      <td style="color:var(--gray-mid)">QBR de diagnóstico de funil · workshop conversão Acc→Opp · plano com vendas do cliente</td>
+    </tr><tr>
+      <td><strong>ALICE</strong></td>
+      <td>Macir Junior</td>
+      <td>Gabriel Novaes</td>
+      <td><span class="pill green">8,00</span></td>
+      <td>mai.</td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Sem outcome demonstrado em 3M</td>
+      <td>R$ 139K</td>
+      <td style="color:var(--gray-mid)">QBR de diagnóstico de funil · workshop conversão Acc→Opp · plano com vendas do cliente</td>
+    </tr><tr>
+      <td><strong>GALCORR</strong></td>
+      <td>Macir Junior</td>
+      <td>Macir Junior</td>
+      <td><span class="pill amber">6,00</span></td>
+      <td>abr.</td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Problema ou falta de dados (cliente não compartilha)</td>
+      <td>R$ 126K</td>
+      <td style="color:var(--gray-mid)">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr>
+      <td><strong>PULSUS</strong></td>
+      <td>Thiago Garcia</td>
+      <td>Victor Reis</td>
+      <td><span class="pill green">7,33</span></td>
+      <td>mai.</td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Falta controle de funil (cliente sem CRM)</td>
+      <td>R$ 117K</td>
+      <td style="color:var(--gray-mid)">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr>
+      <td><strong>GRUPO TPC</strong></td>
+      <td>Victor Reis</td>
+      <td>Victor Reis</td>
+      <td><span class="pill green">7,00</span></td>
+      <td>abr.</td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Problema ou falta de dados (cliente não compartilha)</td>
+      <td>R$ 106K</td>
+      <td style="color:var(--gray-mid)">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr>
+      <td><strong>ACTIVE CLOUD SOLUTIONS</strong></td>
+      <td>Victor Reis</td>
+      <td>Victor Reis</td>
+      <td><span class="pill green">8,25</span></td>
+      <td>mai.</td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Problema ou falta de dados (cliente não compartilha)</td>
+      <td>R$ 96K</td>
+      <td style="color:var(--gray-mid)">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr>
+      <td><strong>Almata Química</strong></td>
+      <td>Victor Reis</td>
+      <td>Victor Reis</td>
+      <td><span class="pill amber">6,50</span></td>
+      <td>mai.</td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Em fase de implantação - sub-aproveitado</td>
+      <td>R$ 95K</td>
+      <td style="color:var(--gray-mid)">Acelerar onboarding · validação de target accounts · QBR 30/60/90</td>
+    </tr><tr>
+      <td><strong>Madripel Embalagens</strong></td>
+      <td>Thiago Garcia</td>
+      <td>Rafael Ferreira</td>
+      <td><span class="pill red">5,75</span></td>
+      <td>jun.</td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Cliente não aderente / sub-utilização</td>
+      <td>R$ 90K</td>
+      <td style="color:var(--gray-mid)">Reuniões executivas com sponsor · plano de adoção por usuário</td>
+    </tr><tr>
+      <td><strong>PEOPLEPRO</strong></td>
+      <td>Thiago Garcia</td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill green">8,00</span></td>
+      <td>abr.</td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Problema ou falta de dados (cliente não compartilha)</td>
+      <td>R$ 90K</td>
+      <td style="color:var(--gray-mid)">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr>
+      <td><strong>PRESTEX</strong></td>
+      <td>Thiago Garcia</td>
+      <td>Victor Reis</td>
+      <td><span class="pill red">5,33</span></td>
+      <td>mai.</td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Problema ou falta de dados (cliente não compartilha)</td>
+      <td>R$ 66K</td>
+      <td style="color:var(--gray-mid)">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr>
+      <td><strong>DEEP ESG</strong></td>
+      <td>Rafael Ferreira</td>
+      <td>Rafael Ferreira</td>
+      <td><span class="pill amber">6,50</span></td>
+      <td>mai.</td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Problema ou falta de dados (cliente não compartilha)</td>
+      <td>—</td>
+      <td style="color:var(--gray-mid)">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr>
+      <td><strong>Gooroocredito</strong></td>
+      <td>Rafael Ferreira</td>
+      <td>Rafael Ferreira</td>
+      <td><span class="pill amber">6,17</span></td>
+      <td>jun.</td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Cliente não aderente / sub-utilização</td>
+      <td>—</td>
+      <td style="color:var(--gray-mid)">Reuniões executivas com sponsor · plano de adoção por usuário</td>
+    </tr><tr>
+      <td><strong>OCTADESK</strong></td>
+      <td>Thiago Garcia</td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill amber">6,00</span></td>
+      <td>abr.</td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Problema ou falta de dados (cliente não compartilha)</td>
+      <td>—</td>
+      <td style="color:var(--gray-mid)">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr>
+      <td><strong>ORACLE DO BRASIL SISTEMAS LTDA</strong></td>
+      <td>Thiago Garcia</td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill green">7,00</span></td>
+      <td>abr.</td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Problema ou falta de dados (cliente não compartilha)</td>
+      <td>—</td>
+      <td style="color:var(--gray-mid)">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr>
+      <td><strong>SPFLEX MANGUEIRAS E CONEXÕES</strong></td>
+      <td>Rafael Ferreira</td>
+      <td>Rafael Ferreira</td>
+      <td><span class="pill red">5,86</span></td>
+      <td>mai.</td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Cliente não aderente / sub-utilização</td>
+      <td>—</td>
+      <td style="color:var(--gray-mid)">Reuniões executivas com sponsor · plano de adoção por usuário</td>
+    </tr><tr>
+      <td><strong>yokohama-tws.com</strong></td>
+      <td>Thiago Garcia</td>
+      <td>Victor Reis</td>
+      <td><span class="pill green">7,20</span></td>
+      <td>jun.</td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Problema ou falta de dados (cliente não compartilha)</td>
+      <td>—</td>
+      <td style="color:var(--gray-mid)">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr></tbody></table></div>
+  <div class="tab-content" id="tab-qual"><div class="section-label">Nota média geral · 468 calls válidas</div><div class="card-grid cols-4"><div class="card red">
+    <div class="label">Nota média</div>
+    <div class="big red">6,92</div>
+    <div class="sublabel">meta: 8,0</div>
+  </div><div class="card green">
+    <div class="label">Excelentes ≥9</div>
+    <div class="big green">102</div>
+    <div class="sublabel">21.8%</div>
+    <div class="bar"><div style="width:21.8%"></div></div>
+  </div><div class="card blue">
+    <div class="label">Boas 7–8</div>
+    <div class="big">240</div>
+    <div class="sublabel">51.3%</div>
+    <div class="bar blue"><div style="width:51.3%"></div></div>
+  </div><div class="card red">
+    <div class="label">Abaixo &lt;7</div>
+    <div class="big red">126</div>
+    <div class="sublabel">26.9%</div>
+    <div class="bar red"><div style="width:26.9%"></div></div>
+  </div></div><div class="section-label">Nota por CS · vs meta 8,0</div><table><thead><tr><th>CS</th><th>Nota</th><th>Meta</th><th>vs Meta</th><th>% &lt;7</th><th>Principal ofensor</th></tr></thead><tbody><tr>
+      <td><strong>Macir Junior</strong></td>
+      <td>6,67</td>
+      <td>8,0</td>
+      <td><span class="pill red">-1,33</span></td>
+      <td>33,3%</td>
+      <td style="color:var(--gray-mid)">Preparação prévia</td>
+    </tr><tr>
+      <td><strong>Rafael Ferreira</strong></td>
+      <td>6,68</td>
+      <td>8,0</td>
+      <td><span class="pill red">-1,32</span></td>
+      <td>28,9%</td>
+      <td style="color:var(--gray-mid)">Escuta ativa</td>
+    </tr><tr>
+      <td><strong>Thiago Garcia</strong></td>
+      <td>6,77</td>
+      <td>8,0</td>
+      <td><span class="pill red">-1,23</span></td>
+      <td>33,8%</td>
+      <td style="color:var(--gray-mid)">Escuta ativa</td>
+    </tr><tr>
+      <td><strong>Victor Reis</strong></td>
+      <td>6,67</td>
+      <td>8,0</td>
+      <td><span class="pill red">-1,33</span></td>
+      <td>20,5%</td>
+      <td style="color:var(--gray-mid)">Escuta ativa</td>
+    </tr></tbody></table><div class="callout red"><strong>Nenhum CS atingiu a meta de 8,0.</strong> Macir Junior tem o maior gap (-1,33). A operação Commercial está em média 1,08 pontos abaixo do esperado.</div><div class="section-label">Top ofensores · calls &lt;7</div><table><thead><tr><th>Dimensão</th><th>% calls impactadas</th><th>Leitura</th></tr></thead><tbody><tr>
+      <td><strong>Escuta ativa</strong></td>
+      <td>60.3%</td>
+      <td style="color:var(--gray-mid)">Cliente fala &lt;30% · poucas perguntas abertas</td>
+    </tr><tr>
+      <td><strong>Preparação prévia</strong></td>
+      <td>44.5%</td>
+      <td style="color:var(--gray-mid)">Sem contexto, dados ou referência à call anterior</td>
+    </tr><tr>
+      <td><strong>Geração de valor</strong></td>
+      <td>41.1%</td>
+      <td style="color:var(--gray-mid)">Sem benchmark, métrica ou recomendação clara</td>
+    </tr><tr>
+      <td><strong>Próximos passos</strong></td>
+      <td>37.7%</td>
+      <td style="color:var(--gray-mid)">Sem responsável + prazo no fechamento</td>
+    </tr><tr>
+      <td><strong>Agenda estruturada</strong></td>
+      <td>26.7%</td>
+      <td style="color:var(--gray-mid)">Sem objetivo explícito + controle de tempo</td>
+    </tr></tbody></table><div class="section-label">Contas em risco + pior execução</div><table><thead><tr><th>Cliente</th><th>CS</th><th>Nota</th><th>Tipo</th><th>Motivo Inferido</th><th>Risco</th></tr></thead><tbody><tr>
+      <td><strong>GALCORR</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill amber">6,00</span></td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Problema ou falta de dados (cliente não compartilha)</td>
+      <td>R$ 126K</td>
+    </tr><tr>
+      <td><strong>BRR Crédito Digital</strong></td>
+      <td>Victor Reis</td>
+      <td><span class="pill red">3,42</span></td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Falta controle de funil (cliente sem CRM)</td>
+      <td>R$ 96K</td>
+    </tr><tr>
+      <td><strong>Hexxa Metal</strong></td>
+      <td>Rafael Ferreira</td>
+      <td><span class="pill amber">6,40</span></td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Cliente não aderente / sub-utilização</td>
+      <td>R$ 96K</td>
+    </tr><tr>
+      <td><strong>Almata Química</strong></td>
+      <td>Victor Reis</td>
+      <td><span class="pill amber">6,50</span></td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Em fase de implantação - sub-aproveitado</td>
+      <td>R$ 95K</td>
+    </tr><tr>
+      <td><strong>DOT DIGITAL GROUP</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill red">3,00</span></td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Cliente não aderente / sub-utilização</td>
+      <td>R$ 95K</td>
+    </tr><tr>
+      <td><strong>Madripel Embalagens</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill red">5,75</span></td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Cliente não aderente / sub-utilização</td>
+      <td>R$ 90K</td>
+    </tr><tr>
+      <td><strong>PRESTEX</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill red">5,33</span></td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Problema ou falta de dados (cliente não compartilha)</td>
+      <td>R$ 66K</td>
+    </tr><tr>
+      <td><strong>DEEP ESG</strong></td>
+      <td>Rafael Ferreira</td>
+      <td><span class="pill amber">6,50</span></td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Problema ou falta de dados (cliente não compartilha)</td>
+      <td>—</td>
+    </tr><tr>
+      <td><strong>Gooroocredito</strong></td>
+      <td>Rafael Ferreira</td>
+      <td><span class="pill amber">6,17</span></td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Cliente não aderente / sub-utilização</td>
+      <td>—</td>
+    </tr><tr>
+      <td><strong>OCTADESK</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill amber">6,00</span></td>
+      <td><span class="pill red">Churn</span></td>
+      <td style="color:var(--gray-mid)">Problema ou falta de dados (cliente não compartilha)</td>
+      <td>—</td>
+    </tr></tbody></table><div class="section-label">Melhores notas · candidatas a expansão</div><table><thead><tr><th>Cliente</th><th>CS</th><th>Nota</th><th>Sentimento</th><th>Vendas 3M</th><th>MRR</th></tr></thead><tbody><tr>
+      <td><strong>ASAAS</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill green">9,25</span></td>
+      <td><span class="pill neutral">Sem dados</span></td>
+      <td>0</td>
+      <td>—</td>
+    </tr><tr>
+      <td><strong>WITTEL COMUNICACAO LTDA</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">9,00</span></td>
+      <td><span class="pill neutral">Sem dados</span></td>
+      <td>—</td>
+      <td>—</td>
+    </tr><tr>
+      <td><strong>CELCOIN</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">9,00</span></td>
+      <td><span class="pill neutral">Sem dados</span></td>
+      <td>0</td>
+      <td>—</td>
+    </tr><tr>
+      <td><strong>CIRION TECHNOLOGIES</strong></td>
+      <td>Victor Reis</td>
+      <td><span class="pill green">9,00</span></td>
+      <td><span class="pill neutral">Sem dados</span></td>
+      <td>—</td>
+      <td>—</td>
+    </tr><tr>
+      <td><strong>GRUPO OLX</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">9,00</span></td>
+      <td><span class="pill red">Ruim</span></td>
+      <td>0</td>
+      <td>—</td>
+    </tr><tr>
+      <td><strong>GoodStorage</strong></td>
+      <td>Victor Reis</td>
+      <td><span class="pill green">9,00</span></td>
+      <td><span class="pill neutral">Sem dados</span></td>
+      <td>0</td>
+      <td>—</td>
+    </tr><tr>
+      <td><strong>DreamShaper (BU: iScholar)</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">9,00</span></td>
+      <td><span class="pill neutral">Sem dados</span></td>
+      <td>—</td>
+      <td>—</td>
+    </tr><tr>
+      <td><strong>Litroz on</strong></td>
+      <td>Rafael Ferreira</td>
+      <td><span class="pill green">8,75</span></td>
+      <td><span class="pill amber">Neutro</span></td>
+      <td>0</td>
+      <td>—</td>
+    </tr><tr>
+      <td><strong>SAQUE E PAGUE</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">8,75</span></td>
+      <td><span class="pill amber">Neutro</span></td>
+      <td>0</td>
+      <td>—</td>
+    </tr><tr>
+      <td><strong>UPFLUX</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill green">8,57</span></td>
+      <td><span class="pill amber">Neutro</span></td>
+      <td>0</td>
+      <td>—</td>
+    </tr></tbody></table></div>
+  <div class="tab-content" id="tab-qres"><div class="section-label">Leitura do quadrante · execução vs resultado do cliente</div><div class="card-grid cols-4"><div class="card green">
+    <span class="badge green">execução boa + resultado ok</span>
+    <div class="label">Expansão / case</div>
+    <div class="big">5</div>
+    <div class="sublabel">candidatas a replicar padrão</div>
+  </div><div class="card blue">
+    <span class="badge blue">execução boa + resultado travado</span>
+    <div class="label">Investigar conversão</div>
+    <div class="big">21</div>
+    <div class="sublabel">mismatch ICP ou esteira</div>
+  </div><div class="card red">
+    <span class="badge red">execução fraca + resultado ruim</span>
+    <div class="label">Risco total</div>
+    <div class="big red">12</div>
+    <div class="sublabel">salvamento prioritário</div>
+  </div><div class="card amber">
+    <span class="badge amber">execução fraca + cliente feliz</span>
+    <div class="label">Risco silencioso</div>
+    <div class="big">3</div>
+    <div class="sublabel">churn velado · padronizar</div>
+  </div></div><div class="callout blue"><strong>Quadrante mais valioso: execução boa + resultado travado.</strong> Os CSMs estão entregando bem, mas o problema é o funil do cliente — não a jornada. Diagnóstico de conversão é o próximo passo.</div><div class="section-label">Mapeamento completo</div><table><thead><tr>
+    <th>Cliente</th><th>CS</th><th>Nota</th><th>Sentimento</th><th>Resultado Mapeado</th><th>VS Benchmark</th><th>Quadrante</th>
+  </tr></thead><tbody><tr>
+      <td><strong>ABSOLUTA SAUDE</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill green">7,56</span></td>
+      <td><span class="pill green">Bom</span></td>
+      <td style="color:var(--gray-mid)">38 opps · 4396 leads</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.9% abaixo</td>
+      <td><span class="pill green">expandir</span></td>
+    </tr><tr>
+      <td><strong>VERZANI &amp; SANDRINI</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">8,00</span></td>
+      <td><span class="pill green">Bom</span></td>
+      <td style="color:var(--gray-mid)">364 leads</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill green">expandir</span></td>
+    </tr><tr>
+      <td><strong>V360</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill green">8,00</span></td>
+      <td><span class="pill green">Bom</span></td>
+      <td style="color:var(--gray-mid)">1340 leads</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill green">expandir</span></td>
+    </tr><tr>
+      <td><strong>BSA</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill green">7,00</span></td>
+      <td><span class="pill green">Bom</span></td>
+      <td style="color:var(--gray-mid)">98 vendas · 923 opps · 5415 leads</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 17.0% dentro</td>
+      <td><span class="pill green">expandir</span></td>
+    </tr><tr>
+      <td><strong>CTA SMART</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">8,00</span></td>
+      <td><span class="pill green">Bom</span></td>
+      <td style="color:var(--gray-mid)">13 vendas · 59 opps · 1700 leads</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 3.5% abaixo</td>
+      <td><span class="pill green">expandir</span></td>
+    </tr><tr>
+      <td><strong>WLM IND COM</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">7,00</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">90 leads · MRR R$ 23K</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill blue">investigar</span></td>
+    </tr><tr>
+      <td><strong>UMOV.ME S.A.</strong></td>
+      <td>Rafael Ferreira</td>
+      <td><span class="pill green">7,33</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">386 leads · MRR R$ 11K</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill blue">investigar</span></td>
+    </tr><tr>
+      <td><strong>SPS GROUP</strong></td>
+      <td>Victor Reis</td>
+      <td><span class="pill green">7,50</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">378 leads · MRR R$ 9K</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill blue">investigar</span></td>
+    </tr><tr>
+      <td><strong>REMESSA ONLINE</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">9,00</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">MRR R$ 8K</td>
+      <td style="color:var(--gray-mid)">sem dados</td>
+      <td><span class="pill blue">investigar</span></td>
+    </tr><tr>
+      <td><strong>PULSUS</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill green">7,33</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">2 leads · MRR R$ 9K</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill blue">investigar</span></td>
+    </tr><tr>
+      <td><strong>PEOPLEPRO</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill green">8,00</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">367 leads · MRR R$ 7K</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill blue">investigar</span></td>
+    </tr><tr>
+      <td><strong>PAYTRACK</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">8,00</span></td>
+      <td><span class="pill red">Ruim</span></td>
+      <td style="color:var(--gray-mid)">1 opps · 34 leads · MRR R$ 8K</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 2.9% abaixo</td>
+      <td><span class="pill blue">investigar</span></td>
+    </tr><tr>
+      <td><strong>ORACLE DO BRASIL SISTEMAS LTDA</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill green">7,00</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">38 opps · 3810 leads · MRR R$ 12K</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 1.0% abaixo</td>
+      <td><span class="pill blue">investigar</span></td>
+    </tr><tr>
+      <td><strong>GRUPO TPC</strong></td>
+      <td>Victor Reis</td>
+      <td><span class="pill green">7,00</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">137 leads · MRR R$ 8K</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill blue">investigar</span></td>
+    </tr><tr>
+      <td><strong>GRUPO OLX</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">9,00</span></td>
+      <td><span class="pill red">Ruim</span></td>
+      <td style="color:var(--gray-mid)">sem dados</td>
+      <td style="color:var(--gray-mid)">sem dados</td>
+      <td><span class="pill blue">investigar</span></td>
+    </tr><tr>
+      <td><strong>FRETADAO</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">8,00</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">5 opps · 291 leads · MRR R$ 8K</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 1.7% abaixo</td>
+      <td><span class="pill blue">investigar</span></td>
+    </tr><tr>
+      <td><strong>yokohama-tws.com</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill green">7,20</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">MRR R$ 8K</td>
+      <td style="color:var(--gray-mid)">sem dados</td>
+      <td><span class="pill blue">investigar</span></td>
+    </tr><tr>
+      <td><strong>CATHO</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">7,83</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">1500 leads · MRR R$ 11K</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill blue">investigar</span></td>
+    </tr><tr>
+      <td><strong>DreamShaper (BU: Educbank)</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">8,00</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">MRR R$ 12K</td>
+      <td style="color:var(--gray-mid)">sem dados</td>
+      <td><span class="pill blue">investigar</span></td>
+    </tr><tr>
+      <td><strong>ACTIVE CLOUD SOLUTIONS</strong></td>
+      <td>Victor Reis</td>
+      <td><span class="pill green">8,25</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">1591 leads · MRR R$ 7K</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill blue">investigar</span></td>
+    </tr><tr>
+      <td><strong>ALICE</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">8,00</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">MRR R$ 11K</td>
+      <td style="color:var(--gray-mid)">sem dados</td>
+      <td><span class="pill blue">investigar</span></td>
+    </tr><tr>
+      <td><strong>B2Finance Auditoria e Consultoria Ltda</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill green">7,67</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">18 opps · 632 leads · MRR R$ 8K</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 2.8% abaixo</td>
+      <td><span class="pill blue">investigar</span></td>
+    </tr><tr>
+      <td><strong>DreamShaper (BU: Educbank)</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">8,00</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">MRR R$ 12K</td>
+      <td style="color:var(--gray-mid)">sem dados</td>
+      <td><span class="pill blue">investigar</span></td>
+    </tr><tr>
+      <td><strong>CRED MHS</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill green">8,50</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">1202 leads · MRR R$ 7K</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill blue">investigar</span></td>
+    </tr><tr>
+      <td><strong>Cimentos do Brasil SA</strong></td>
+      <td>Rafael Ferreira</td>
+      <td><span class="pill green">9,00</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">500 leads · MRR R$ 7K</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill blue">investigar</span></td>
+    </tr><tr>
+      <td><strong>Corp Comunicação</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill green">7,33</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">51 leads · MRR R$ 9K</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill blue">investigar</span></td>
+    </tr><tr>
+      <td><strong>TRIPLA</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill amber">6,00</span></td>
+      <td><span class="pill green">Bom</span></td>
+      <td style="color:var(--gray-mid)">220 leads</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill amber">risco silencioso</span></td>
+    </tr><tr>
+      <td><strong>ZEEV</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill amber">6,62</span></td>
+      <td><span class="pill green">Bom</span></td>
+      <td style="color:var(--gray-mid)">200 leads</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill amber">risco silencioso</span></td>
+    </tr><tr>
+      <td><strong>FKB EQUIPAMENTOS LTDA</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill amber">6,50</span></td>
+      <td><span class="pill green">Bom</span></td>
+      <td style="color:var(--gray-mid)">1 vendas · 4 opps · 100 leads</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 4.0% abaixo</td>
+      <td><span class="pill amber">risco silencioso</span></td>
+    </tr><tr>
+      <td><strong>Madripel Embalagens</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill red">5,75</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">500 leads · MRR R$ 7K</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill red">risco total</span></td>
+    </tr><tr>
+      <td><strong>OCTADESK</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill amber">6,00</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">1092 leads · MRR R$ 9K</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill red">risco total</span></td>
+    </tr><tr>
+      <td><strong>GALCORR</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill amber">6,00</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">MRR R$ 10K</td>
+      <td style="color:var(--gray-mid)">sem dados</td>
+      <td><span class="pill red">risco total</span></td>
+    </tr><tr>
+      <td><strong>VALECARD</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill red">5,14</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">32 vendas · 15 opps · 161 leads</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 9.3% abaixo</td>
+      <td><span class="pill red">risco total</span></td>
+    </tr><tr>
+      <td><strong>Hexxa Metal</strong></td>
+      <td>Rafael Ferreira</td>
+      <td><span class="pill amber">6,40</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">MRR R$ 8K</td>
+      <td style="color:var(--gray-mid)">sem dados</td>
+      <td><span class="pill red">risco total</span></td>
+    </tr><tr>
+      <td><strong>PRESTEX</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill red">5,33</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">MRR R$ 5K</td>
+      <td style="color:var(--gray-mid)">sem dados</td>
+      <td><span class="pill red">risco total</span></td>
+    </tr><tr>
+      <td><strong>Almata Química</strong></td>
+      <td>Victor Reis</td>
+      <td><span class="pill amber">6,50</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">301 leads · MRR R$ 7K</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill red">risco total</span></td>
+    </tr><tr>
+      <td><strong>Gooroocredito</strong></td>
+      <td>Rafael Ferreira</td>
+      <td><span class="pill amber">6,17</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">MRR R$ 8K</td>
+      <td style="color:var(--gray-mid)">sem dados</td>
+      <td><span class="pill red">risco total</span></td>
+    </tr><tr>
+      <td><strong>DOT DIGITAL GROUP</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill red">3,00</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">200 leads · MRR R$ 7K</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill red">risco total</span></td>
+    </tr><tr>
+      <td><strong>SPFLEX MANGUEIRAS E CONEXÕES</strong></td>
+      <td>Rafael Ferreira</td>
+      <td><span class="pill red">5,86</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">MRR R$ 7K</td>
+      <td style="color:var(--gray-mid)">sem dados</td>
+      <td><span class="pill red">risco total</span></td>
+    </tr><tr>
+      <td><strong>BRR Crédito Digital</strong></td>
+      <td>Victor Reis</td>
+      <td><span class="pill red">3,42</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">147 leads · MRR R$ 8K</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill red">risco total</span></td>
+    </tr><tr>
+      <td><strong>DEEP ESG</strong></td>
+      <td>Rafael Ferreira</td>
+      <td><span class="pill amber">6,50</span></td>
+      <td><span class="pill red">Péssimo</span></td>
+      <td style="color:var(--gray-mid)">68 leads · MRR R$ 7K</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill red">risco total</span></td>
+    </tr><tr>
+      <td><strong>VOCKAN</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill green">8,00</span></td>
+      <td><span class="pill amber">Neutro</span></td>
+      <td style="color:var(--gray-mid)">199 leads</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill blue">manter</span></td>
+    </tr><tr>
+      <td><strong>UPFLUX</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill green">8,57</span></td>
+      <td><span class="pill amber">Neutro</span></td>
+      <td style="color:var(--gray-mid)">11 opps · 352 leads</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 3.1% abaixo</td>
+      <td><span class="pill blue">manter</span></td>
+    </tr><tr>
+      <td><strong>UNIMED PORTO ALEGRE</strong></td>
+      <td>Victor Reis</td>
+      <td><span class="pill green">7,00</span></td>
+      <td><span class="pill amber">Neutro</span></td>
+      <td style="color:var(--gray-mid)">490 leads</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill blue">manter</span></td>
+    </tr><tr>
+      <td><strong>SYSTAX</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">7,43</span></td>
+      <td><span class="pill amber">Neutro</span></td>
+      <td style="color:var(--gray-mid)">sem dados</td>
+      <td style="color:var(--gray-mid)">sem dados</td>
+      <td><span class="pill blue">manter</span></td>
+    </tr><tr>
+      <td><strong>SAQUE E PAGUE</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">8,75</span></td>
+      <td><span class="pill amber">Neutro</span></td>
+      <td style="color:var(--gray-mid)">sem dados</td>
+      <td style="color:var(--gray-mid)">sem dados</td>
+      <td><span class="pill blue">manter</span></td>
+    </tr><tr>
+      <td><strong>Raiô Benefícios</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill green">7,00</span></td>
+      <td><span class="pill amber">Neutro</span></td>
+      <td style="color:var(--gray-mid)">2104 leads</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill blue">manter</span></td>
+    </tr><tr>
+      <td><strong>CLICKSIGN</strong></td>
+      <td>Victor Reis</td>
+      <td><span class="pill green">7,38</span></td>
+      <td><span class="pill amber">Neutro</span></td>
+      <td style="color:var(--gray-mid)">222 leads</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill blue">manter</span></td>
+    </tr><tr>
+      <td><strong>JOOM GROUP</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">8,00</span></td>
+      <td><span class="pill amber">Neutro</span></td>
+      <td style="color:var(--gray-mid)">sem dados</td>
+      <td style="color:var(--gray-mid)">sem dados</td>
+      <td><span class="pill blue">manter</span></td>
+    </tr><tr>
+      <td><strong>Litroz on</strong></td>
+      <td>Rafael Ferreira</td>
+      <td><span class="pill green">8,75</span></td>
+      <td><span class="pill amber">Neutro</span></td>
+      <td style="color:var(--gray-mid)">8 opps · 367 leads</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 2.2% abaixo</td>
+      <td><span class="pill blue">manter</span></td>
+    </tr><tr>
+      <td><strong>TD SYNNEX BRASIL LTDA</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill green">7,00</span></td>
+      <td><span class="pill amber">Neutro</span></td>
+      <td style="color:var(--gray-mid)">47 leads</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill blue">manter</span></td>
+    </tr><tr>
+      <td><strong>MATERA</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill red">5,00</span></td>
+      <td><span class="pill amber">Neutro</span></td>
+      <td style="color:var(--gray-mid)">178 leads</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill amber">atenção</span></td>
+    </tr><tr>
+      <td><strong>SOLUTI DIGITAL</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill red">4,20</span></td>
+      <td><span class="pill amber">Neutro</span></td>
+      <td style="color:var(--gray-mid)">sem dados</td>
+      <td style="color:var(--gray-mid)">sem dados</td>
+      <td><span class="pill amber">atenção</span></td>
+    </tr><tr>
+      <td><strong>PENTARE CONSULTORIA</strong></td>
+      <td>Rafael Ferreira</td>
+      <td><span class="pill amber">6,08</span></td>
+      <td><span class="pill amber">Neutro</span></td>
+      <td style="color:var(--gray-mid)">1 leads</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill amber">atenção</span></td>
+    </tr><tr>
+      <td><strong>Vendemmia</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill amber">6,17</span></td>
+      <td><span class="pill amber">Neutro</span></td>
+      <td style="color:var(--gray-mid)">908 leads</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill amber">atenção</span></td>
+    </tr><tr>
+      <td><strong>Foco Aluguel de Carros</strong></td>
+      <td>Victor Reis</td>
+      <td><span class="pill amber">6,50</span></td>
+      <td><span class="pill amber">Neutro</span></td>
+      <td style="color:var(--gray-mid)">2 opps · 510 leads</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.4% abaixo</td>
+      <td><span class="pill amber">atenção</span></td>
+    </tr><tr>
+      <td><strong>WORK ON</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill amber">6,75</span></td>
+      <td><span class="pill amber">Neutro</span></td>
+      <td style="color:var(--gray-mid)">410 leads</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill amber">atenção</span></td>
+    </tr><tr>
+      <td><strong>Netsoft</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill red">3,75</span></td>
+      <td><span class="pill amber">Neutro</span></td>
+      <td style="color:var(--gray-mid)">649 leads</td>
+      <td style="color:var(--gray-mid)">Lead→Opp: 0.0% abaixo</td>
+      <td><span class="pill amber">atenção</span></td>
+    </tr></tbody></table><div class="callout amber"><strong>Benchmark B2B de referência:</strong> Lead→Opp 10-15% · Opp→Venda 15-25% · Lead→Venda 1-3%. Contas marcadas como "abaixo" precisam de diagnóstico — não é a CS, é o funil do cliente.</div></div>
+  <div class="tab-content" id="tab-qcs"><div class="section-label">Visão por CS · qualidade, cobertura e contas prioritárias</div><div class="cs-cards"><div class="cs-card">
+      <h3>Macir Junior</h3>
+      <div class="vs">Nota 6,67 · meta 8,0 · gap -1,33 · 33,3% calls &lt;7</div>
+    <h4>▼ Top ofensores</h4><div class="list-item">
+        <span class="arrow down">▼</span>
+        <span><strong>Preparação prévia</strong> (50%)</span>
+      </div><div class="list-item">
+        <span class="arrow down">▼</span>
+        <span><strong>Escuta ativa</strong> (46.9%)</span>
+      </div><div class="list-item">
+        <span class="arrow down">▼</span>
+        <span><strong>Geração de valor</strong> (37.5%)</span>
+      </div><h4>▲ O que diferencia as calls boas</h4><div class="list-item">
+          <span class="arrow up">▲</span>
+          <span>Preparação prévia em 95.6% das calls altas</span>
+        </div><div class="list-item">
+          <span class="arrow up">▲</span>
+          <span>Próximos passos em 95.6% das calls altas</span>
+        </div><div class="list-item">
+          <span class="arrow up">▲</span>
+          <span>Escuta ativa em 68.9% das calls altas</span>
+        </div><h4>⚠ Contas em risco · cobertura baixa</h4><div class="conta-line">
+          <span class="pill red">crítico</span>
+          <span><strong>GALCORR</strong> · R$ 126K · Churn · nota 6,00</span>
+        </div><div class="conta-line">
+          <span class="pill red">crítico</span>
+          <span><strong>DOT DIGITAL GROUP</strong> · R$ 95K · Churn · nota 3,00</span>
+        </div><div class="conta-line">
+          <span class="pill red">crítico</span>
+          <span><strong>VALECARD</strong> · — · Churn · nota 5,14</span>
+        </div><h4>★ Expansão</h4><div class="conta-line">
+          <span class="pill green">expandir</span>
+          <span><strong>CELCOIN</strong> · nota 9,00 · Sem dados</span>
+        </div><div class="conta-line">
+          <span class="pill green">expandir</span>
+          <span><strong>GRUPO OLX</strong> · nota 9,00 · Ruim</span>
+        </div><div class="conta-line">
+          <span class="pill green">expandir</span>
+          <span><strong>DreamShaper (BU: iScholar)</strong> · nota 9,00 · Sem dados</span>
+        </div><div class="conta-line">
+          <span class="pill green">expandir</span>
+          <span><strong>WITTEL COMUNICACAO LTDA</strong> · nota 9,00 · Sem dados</span>
+        </div><div class="conta-line">
+          <span class="pill green">expandir</span>
+          <span><strong>SAQUE E PAGUE</strong> · nota 8,75 · Neutro</span>
+        </div></div><div class="cs-card">
+      <h3>Rafael Ferreira</h3>
+      <div class="vs">Nota 6,68 · meta 8,0 · gap -1,32 · 28,9% calls &lt;7</div>
+    <h4>▼ Top ofensores</h4><div class="list-item">
+        <span class="arrow down">▼</span>
+        <span><strong>Escuta ativa</strong> (60.5%)</span>
+      </div><div class="list-item">
+        <span class="arrow down">▼</span>
+        <span><strong>Próximos passos</strong> (48.8%)</span>
+      </div><div class="list-item">
+        <span class="arrow down">▼</span>
+        <span><strong>Geração de valor</strong> (48.8%)</span>
+      </div><h4>▲ O que diferencia as calls boas</h4><div class="list-item">
+          <span class="arrow up">▲</span>
+          <span>Preparação prévia em 98.5% das calls altas</span>
+        </div><div class="list-item">
+          <span class="arrow up">▲</span>
+          <span>Próximos passos em 90.9% das calls altas</span>
+        </div><div class="list-item">
+          <span class="arrow up">▲</span>
+          <span>Geração de valor em 83.3% das calls altas</span>
+        </div><h4>⚠ Contas em risco · cobertura baixa</h4><div class="conta-line">
+          <span class="pill red">crítico</span>
+          <span><strong>Hexxa Metal</strong> · R$ 96K · Churn · nota 6,40</span>
+        </div><div class="conta-line">
+          <span class="pill red">crítico</span>
+          <span><strong>DEEP ESG</strong> · — · Churn · nota 6,50</span>
+        </div><div class="conta-line">
+          <span class="pill red">crítico</span>
+          <span><strong>Gooroocredito</strong> · — · Churn · nota 6,17</span>
+        </div><div class="conta-line">
+          <span class="pill red">crítico</span>
+          <span><strong>SPFLEX MANGUEIRAS E CONEXÕES</strong> · — · Churn · nota 5,86</span>
+        </div><h4>★ Expansão</h4><div class="conta-line">
+          <span class="pill green">expandir</span>
+          <span><strong>Litroz on</strong> · nota 8,75 · Neutro</span>
+        </div><div class="conta-line">
+          <span class="pill green">expandir</span>
+          <span><strong>IT UNIVERSE</strong> · nota 8,50 · Sem dados</span>
+        </div><div class="conta-line">
+          <span class="pill green">expandir</span>
+          <span><strong>Construtora Costa Feitosa</strong> · nota 8,33 · Sem dados</span>
+        </div><div class="conta-line">
+          <span class="pill green">expandir</span>
+          <span><strong>CIMENTO NASSAU</strong> · nota 8,00 · Sem dados</span>
+        </div><div class="conta-line">
+          <span class="pill green">expandir</span>
+          <span><strong>TECNOFIT</strong> · nota 8,00 · Sem dados</span>
+        </div></div><div class="cs-card">
+      <h3>Thiago Garcia</h3>
+      <div class="vs">Nota 6,77 · meta 8,0 · gap -1,23 · 33,8% calls &lt;7</div>
+    <h4>▼ Top ofensores</h4><div class="list-item">
+        <span class="arrow down">▼</span>
+        <span><strong>Escuta ativa</strong> (61.1%)</span>
+      </div><div class="list-item">
+        <span class="arrow down">▼</span>
+        <span><strong>Preparação prévia</strong> (33.3%)</span>
+      </div><div class="list-item">
+        <span class="arrow down">▼</span>
+        <span><strong>Geração de valor</strong> (29.6%)</span>
+      </div><h4>▲ O que diferencia as calls boas</h4><div class="list-item">
+          <span class="arrow up">▲</span>
+          <span>Preparação prévia em 97% das calls altas</span>
+        </div><div class="list-item">
+          <span class="arrow up">▲</span>
+          <span>Próximos passos em 95.5% das calls altas</span>
+        </div><div class="list-item">
+          <span class="arrow up">▲</span>
+          <span>Geração de valor em 68.2% das calls altas</span>
+        </div><h4>⚠ Contas em risco · cobertura baixa</h4><div class="conta-line">
+          <span class="pill red">crítico</span>
+          <span><strong>Madripel Embalagens</strong> · R$ 90K · Churn · nota 5,75</span>
+        </div><div class="conta-line">
+          <span class="pill red">crítico</span>
+          <span><strong>PRESTEX</strong> · R$ 66K · Churn · nota 5,33</span>
+        </div><div class="conta-line">
+          <span class="pill red">crítico</span>
+          <span><strong>OCTADESK</strong> · — · Churn · nota 6,00</span>
+        </div><h4>★ Expansão</h4><div class="conta-line">
+          <span class="pill green">expandir</span>
+          <span><strong>ASAAS</strong> · nota 9,25 · Sem dados</span>
+        </div><div class="conta-line">
+          <span class="pill green">expandir</span>
+          <span><strong>UPFLUX</strong> · nota 8,57 · Neutro</span>
+        </div><div class="conta-line">
+          <span class="pill green">expandir</span>
+          <span><strong>V360</strong> · nota 8,00 · Bom</span>
+        </div><div class="conta-line">
+          <span class="pill green">expandir</span>
+          <span><strong>VOCKAN</strong> · nota 8,00 · Neutro</span>
+        </div></div><div class="cs-card">
+      <h3>Victor Reis</h3>
+      <div class="vs">Nota 6,67 · meta 8,0 · gap -1,33 · 20,5% calls &lt;7</div>
+    <h4>▼ Top ofensores</h4><div class="list-item">
+        <span class="arrow down">▼</span>
+        <span><strong>Escuta ativa</strong> (82.4%)</span>
+      </div><div class="list-item">
+        <span class="arrow down">▼</span>
+        <span><strong>Próximos passos</strong> (70.6%)</span>
+      </div><div class="list-item">
+        <span class="arrow down">▼</span>
+        <span><strong>Preparação prévia</strong> (64.7%)</span>
+      </div><h4>▲ O que diferencia as calls boas</h4><div class="list-item">
+          <span class="arrow up">▲</span>
+          <span>Próximos passos em 92.3% das calls altas</span>
+        </div><div class="list-item">
+          <span class="arrow up">▲</span>
+          <span>Preparação prévia em 89.7% das calls altas</span>
+        </div><div class="list-item">
+          <span class="arrow up">▲</span>
+          <span>Escuta ativa em 69.2% das calls altas</span>
+        </div><h4>⚠ Contas em risco · cobertura baixa</h4><div class="conta-line">
+          <span class="pill red">crítico</span>
+          <span><strong>BRR Crédito Digital</strong> · R$ 96K · Churn · nota 3,42</span>
+        </div><div class="conta-line">
+          <span class="pill red">crítico</span>
+          <span><strong>Almata Química</strong> · R$ 95K · Churn · nota 6,50</span>
+        </div><h4>★ Expansão</h4><div class="conta-line">
+          <span class="pill green">expandir</span>
+          <span><strong>CIRION TECHNOLOGIES</strong> · nota 9,00 · Sem dados</span>
+        </div><div class="conta-line">
+          <span class="pill green">expandir</span>
+          <span><strong>GoodStorage</strong> · nota 9,00 · Sem dados</span>
+        </div><div class="conta-line">
+          <span class="pill green">expandir</span>
+          <span><strong>JUNGHEINRICH BRASIL</strong> · nota 8,00 · Sem dados</span>
+        </div></div></div><div class="section-label">Resumo comparativo · 4 CSMs</div><table><thead><tr><th>Dimensão</th><th>Macir</th><th>Rafael</th><th>Thiago</th><th>Victor</th></tr></thead><tbody><tr>
+      <td><strong>Nota média</strong></td>
+      <td>6,67</td><td>6,68</td><td>6,77</td><td>6,67</td>
+    </tr><tr>
+      <td><strong>Gap vs meta</strong></td>
+      <td>-1,33</td><td>-1,32</td><td>-1,23</td><td>-1,33</td>
+    </tr><tr>
+      <td><strong>% calls &lt; 7</strong></td>
+      <td>33,3%</td><td>28,9%</td><td>33,8%</td><td>20,5%</td>
+    </tr><tr>
+      <td><strong>Fala cliente</strong></td>
+      <td>41,7%</td><td>37,8%</td><td>36,5%</td><td>38,6%</td>
+    </tr><tr>
+      <td><strong>Duração média</strong></td>
+      <td>37,9 min</td><td>41,4 min</td><td>37,7 min</td><td>36,0 min</td>
+    </tr><tr>
+      <td><strong>Maior ofensor</strong></td>
+      <td>Preparação prévia</td><td>Escuta ativa</td><td>Escuta ativa</td><td>Escuta ativa</td>
+    </tr><tr>
+      <td><strong>Contas críticas (Q2 risco)</strong></td>
+      <td>3</td><td>4</td><td>3</td><td>2</td>
+    </tr><tr>
+      <td><strong>Candidatas expansão</strong></td>
+      <td>5</td><td>5</td><td>4</td><td>3</td>
+    </tr></tbody></table></div>
+  <div class="tab-content active" id="tab-risco"><div class="section-label">Exposição Q2 2026 · Commercial</div><div class="card-grid cols-4"><div class="card red">
+    <div class="label">Commercial Q2 em risco</div>
+    <div class="big red">R$ 2,40M</div>
+    <div class="sublabel">29 contas · ARR</div>
+  </div><div class="card amber">
+    <div class="label">MRR em risco</div>
+    <div class="big">R$ 290K</div>
+    <div class="sublabel">/mês · receita recorrente</div>
+  </div><div class="card blue">
+    <div class="label">Contas com calls analisadas</div>
+    <div class="big">17/29</div>
+    <div class="sublabel">59% cobertura de evidência</div>
+  </div><div class="card red">
+    <div class="label">Motivo dominante</div>
+    <div class="big" style="font-size:14px;line-height:1.3">Problema ou falta de dados (cliente não compartilha)</div>
+    <div class="sublabel">9 contas</div>
+  </div></div><div class="callout red"><strong>O padrão de churn não é produto — é cobertura.</strong> A maioria dos motivos inferidos remete a falta de evidência (cliente não compartilha dados de vendas) ou subutilização. Ambos são recuperáveis com cadência ativa de Sales Performance + plano de mensuração.</div><div class="section-label">Detalhamento · 29 contas Commercial Q2 em risco</div><table class="small-table"><thead><tr>
+    <th>Cliente</th><th>CSM (GRR)</th><th>Tipo</th><th>Mês</th><th>Nota Call</th><th>Risco (pess.)</th><th>MRR</th><th>Motivo Inferido</th><th>Plano Sugerido</th>
+  </tr></thead><tbody><tr>
+      <td><strong>SEM PARAR GTMB2B</strong></td>
+      <td>Gabriel Novaes</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>abr.</td>
+      <td><span style="color:var(--gray-soft)">sem call</span></td>
+      <td><strong>R$ 207K</strong></td>
+      <td>R$ 17K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Sem call analisada — revisar caso a caso</td>
+      <td style="color:var(--gray-mid);max-width:260px">Diagnóstico aprofundado · agendar primeira call</td>
+    </tr><tr>
+      <td><strong>AZUL LINHAS AÉREAS GTMB2B
+</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>jun.</td>
+      <td><span style="color:var(--gray-soft)">sem call</span></td>
+      <td><strong>R$ 163K</strong></td>
+      <td>R$ 14K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Sem call analisada — revisar caso a caso</td>
+      <td style="color:var(--gray-mid);max-width:260px">Diagnóstico aprofundado · agendar primeira call</td>
+    </tr><tr>
+      <td><strong>BECOMEX</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>abr.</td>
+      <td><span style="color:var(--gray-soft)">sem call</span></td>
+      <td><strong>R$ 151K</strong></td>
+      <td>R$ 13K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Sem call analisada — revisar caso a caso</td>
+      <td style="color:var(--gray-mid);max-width:260px">Diagnóstico aprofundado · agendar primeira call</td>
+    </tr><tr>
+      <td><strong>DreamShaper GTMB2B (BU: Educbank)</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>jun.</td>
+      <td><span class="pill green">8,00</span></td>
+      <td><strong>R$ 144K</strong></td>
+      <td>R$ 12K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Sem outcome demonstrado em 3M</td>
+      <td style="color:var(--gray-mid);max-width:260px">QBR de diagnóstico de funil · workshop conversão Acc→Opp · plano com vendas do cliente</td>
+    </tr><tr>
+      <td><strong>ARMAC GTMB2B</strong></td>
+      <td>Guilherme Vieira</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>abr.</td>
+      <td><span style="color:var(--gray-soft)">sem call</span></td>
+      <td><strong>R$ 141K</strong></td>
+      <td>R$ 12K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Sem call analisada — revisar caso a caso</td>
+      <td style="color:var(--gray-mid);max-width:260px">Diagnóstico aprofundado · agendar primeira call</td>
+    </tr><tr>
+      <td><strong>ADT BRASIL GTMB2B</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>jun.</td>
+      <td><span class="pill red">5,75</span></td>
+      <td><strong>R$ 139K</strong></td>
+      <td>R$ 12K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Não identificado (revisar caso a caso)</td>
+      <td style="color:var(--gray-mid);max-width:260px">Diagnóstico aprofundado · entrevista de churn · escalonamento ao líder</td>
+    </tr><tr>
+      <td><strong>ALICE GTMB2B</strong></td>
+      <td>Gabriel Novaes</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>mai.</td>
+      <td><span class="pill green">8,00</span></td>
+      <td><strong>R$ 139K</strong></td>
+      <td>R$ 12K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Sem outcome demonstrado em 3M</td>
+      <td style="color:var(--gray-mid);max-width:260px">QBR de diagnóstico de funil · workshop conversão Acc→Opp · plano com vendas do cliente</td>
+    </tr><tr>
+      <td><strong>GALCORR</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>abr.</td>
+      <td><span class="pill amber">6,00</span></td>
+      <td><strong>R$ 126K</strong></td>
+      <td>R$ 11K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Problema ou falta de dados (cliente não compartilha)</td>
+      <td style="color:var(--gray-mid);max-width:260px">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr>
+      <td><strong>GUPY GTMB2B</strong></td>
+      <td>Guilherme Vieira</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>abr.</td>
+      <td><span style="color:var(--gray-soft)">sem call</span></td>
+      <td><strong>R$ 124K</strong></td>
+      <td>R$ 10K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Sem call analisada — revisar caso a caso</td>
+      <td style="color:var(--gray-mid);max-width:260px">Diagnóstico aprofundado · agendar primeira call</td>
+    </tr><tr>
+      <td><strong>MWM MOTORES DIESEL NOVOS NEGÓCIOS SI</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>abr.</td>
+      <td><span style="color:var(--gray-soft)">sem call</span></td>
+      <td><strong>R$ 123K</strong></td>
+      <td>R$ 10K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Sem call analisada — revisar caso a caso</td>
+      <td style="color:var(--gray-mid);max-width:260px">Diagnóstico aprofundado · agendar primeira call</td>
+    </tr><tr>
+      <td><strong>PULSUS GTMB2B</strong></td>
+      <td>Victor Reis</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>mai.</td>
+      <td><span class="pill green">7,33</span></td>
+      <td><strong>R$ 117K</strong></td>
+      <td>R$ 10K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Falta controle de funil (cliente sem CRM)</td>
+      <td style="color:var(--gray-mid);max-width:260px">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr>
+      <td><strong>POSITIVO SOLUÇÕES DIDÁTICAS MARKETING SI</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>abr.</td>
+      <td><span style="color:var(--gray-soft)">sem call</span></td>
+      <td><strong>R$ 112K</strong></td>
+      <td>R$ 9K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Sem call analisada — revisar caso a caso</td>
+      <td style="color:var(--gray-mid);max-width:260px">Diagnóstico aprofundado · agendar primeira call</td>
+    </tr><tr>
+      <td><strong>GRUPO TPC GTMB2B</strong></td>
+      <td>Victor Reis</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>abr.</td>
+      <td><span class="pill green">7,00</span></td>
+      <td><strong>R$ 106K</strong></td>
+      <td>R$ 9K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Problema ou falta de dados (cliente não compartilha)</td>
+      <td style="color:var(--gray-mid);max-width:260px">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr>
+      <td><strong>DELEND GTMB2B</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>abr.</td>
+      <td><span style="color:var(--gray-soft)">sem call</span></td>
+      <td><strong>R$ 96K</strong></td>
+      <td>R$ 8K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Sem call analisada — revisar caso a caso</td>
+      <td style="color:var(--gray-mid);max-width:260px">Diagnóstico aprofundado · agendar primeira call</td>
+    </tr><tr>
+      <td><strong>ACTIVE CLOUD SOLUTIONS GTMB2B
+</strong></td>
+      <td>Victor Reis</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>mai.</td>
+      <td><span class="pill green">8,25</span></td>
+      <td><strong>R$ 96K</strong></td>
+      <td>R$ 8K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Problema ou falta de dados (cliente não compartilha)</td>
+      <td style="color:var(--gray-mid);max-width:260px">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr>
+      <td><strong>ALMATA QUÍMICA GTMB2B</strong></td>
+      <td>Victor Reis</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>mai.</td>
+      <td><span class="pill amber">6,50</span></td>
+      <td><strong>R$ 95K</strong></td>
+      <td>R$ 8K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Em fase de implantação - sub-aproveitado</td>
+      <td style="color:var(--gray-mid);max-width:260px">Acelerar onboarding · validação de target accounts · QBR 30/60/90</td>
+    </tr><tr>
+      <td><strong>PEOPLEPRO GTMB2B</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>abr.</td>
+      <td><span class="pill green">8,00</span></td>
+      <td><strong>R$ 90K</strong></td>
+      <td>R$ 8K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Problema ou falta de dados (cliente não compartilha)</td>
+      <td style="color:var(--gray-mid);max-width:260px">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr>
+      <td><strong>MADRIPEL EMBALAGENS GTMB2B</strong></td>
+      <td>Rafael Ferreira</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>jun.</td>
+      <td><span class="pill red">5,75</span></td>
+      <td><strong>R$ 90K</strong></td>
+      <td>R$ 8K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Cliente não aderente / sub-utilização</td>
+      <td style="color:var(--gray-mid);max-width:260px">Reuniões executivas com sponsor · plano de adoção por usuário</td>
+    </tr><tr>
+      <td><strong>PARKER HANNIFIN MARKETING E INTELIGENCIA DE MERCADO SI</strong></td>
+      <td>Macir Junior</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>jun.</td>
+      <td><span style="color:var(--gray-soft)">sem call</span></td>
+      <td><strong>R$ 76K</strong></td>
+      <td>R$ 6K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Sem call analisada — revisar caso a caso</td>
+      <td style="color:var(--gray-mid);max-width:260px">Diagnóstico aprofundado · agendar primeira call</td>
+    </tr><tr>
+      <td><strong>PRESTEX GTMB2B</strong></td>
+      <td>Victor Reis</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>mai.</td>
+      <td><span class="pill red">5,33</span></td>
+      <td><strong>R$ 66K</strong></td>
+      <td>R$ 5K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Problema ou falta de dados (cliente não compartilha)</td>
+      <td style="color:var(--gray-mid);max-width:260px">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr>
+      <td><strong>ORACLE DO BRASIL SISTEMAS LTDA GTMB2B</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>abr.</td>
+      <td><span class="pill green">7,00</span></td>
+      <td><strong>—</strong></td>
+      <td>R$ 12K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Problema ou falta de dados (cliente não compartilha)</td>
+      <td style="color:var(--gray-mid);max-width:260px">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr>
+      <td><strong>OCTADESK GTMB2B</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>abr.</td>
+      <td><span class="pill amber">6,00</span></td>
+      <td><strong>—</strong></td>
+      <td>R$ 9K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Problema ou falta de dados (cliente não compartilha)</td>
+      <td style="color:var(--gray-mid);max-width:260px">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr>
+      <td><strong>HYSTER-YALE</strong></td>
+      <td>Thiago Garcia</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>abr.</td>
+      <td><span style="color:var(--gray-soft)">sem call</span></td>
+      <td><strong>—</strong></td>
+      <td>R$ 11K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Sem call analisada — revisar caso a caso</td>
+      <td style="color:var(--gray-mid);max-width:260px">Diagnóstico aprofundado · agendar primeira call</td>
+    </tr><tr>
+      <td><strong>YOKOHAMA-TWS.COM GTMB2B</strong></td>
+      <td>Victor Reis</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>jun.</td>
+      <td><span class="pill green">7,20</span></td>
+      <td><strong>—</strong></td>
+      <td>R$ 8K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Problema ou falta de dados (cliente não compartilha)</td>
+      <td style="color:var(--gray-mid);max-width:260px">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr>
+      <td><strong>GOOROOCREDITO GTMB2B</strong></td>
+      <td>Rafael Ferreira</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>jun.</td>
+      <td><span class="pill amber">6,17</span></td>
+      <td><strong>—</strong></td>
+      <td>R$ 9K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Cliente não aderente / sub-utilização</td>
+      <td style="color:var(--gray-mid);max-width:260px">Reuniões executivas com sponsor · plano de adoção por usuário</td>
+    </tr><tr>
+      <td><strong>ELETROBRAS MARKETING SI</strong></td>
+      <td>Gabriel Novaes</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>jun.</td>
+      <td><span style="color:var(--gray-soft)">sem call</span></td>
+      <td><strong>—</strong></td>
+      <td>R$ 20K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Sem call analisada — revisar caso a caso</td>
+      <td style="color:var(--gray-mid);max-width:260px">Diagnóstico aprofundado · agendar primeira call</td>
+    </tr><tr>
+      <td><strong>DEEP ESG GTMB2B</strong></td>
+      <td>Rafael Ferreira</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>mai.</td>
+      <td><span class="pill amber">6,50</span></td>
+      <td><strong>—</strong></td>
+      <td>R$ 7K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Problema ou falta de dados (cliente não compartilha)</td>
+      <td style="color:var(--gray-mid);max-width:260px">Setup de integração CRM/HubSpot · workshop de mensuração com cliente</td>
+    </tr><tr>
+      <td><strong>SPFLEX MANGUEIRAS E CONEXÕES GTMB2B</strong></td>
+      <td>Rafael Ferreira</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>mai.</td>
+      <td><span class="pill red">5,86</span></td>
+      <td><strong>—</strong></td>
+      <td>R$ 8K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Cliente não aderente / sub-utilização</td>
+      <td style="color:var(--gray-mid);max-width:260px">Reuniões executivas com sponsor · plano de adoção por usuário</td>
+    </tr><tr>
+      <td><strong>PROTEGE PRODUTOS, INOVAÇÃO E INTELIGÊNCIA DE MERCADO SI</strong></td>
+      <td>Rafael Ferreira</td>
+      <td><span class="pill red">Churn</span></td>
+      <td>mai.</td>
+      <td><span style="color:var(--gray-soft)">sem call</span></td>
+      <td><strong>—</strong></td>
+      <td>R$ 8K</td>
+      <td style="color:var(--gray-mid);max-width:220px">Sem call analisada — revisar caso a caso</td>
+      <td style="color:var(--gray-mid);max-width:260px">Diagnóstico aprofundado · agendar primeira call</td>
+    </tr></tbody></table><div class="section-label">Motivos inferidos · contas com call analisada</div><table><thead><tr><th>Motivo</th><th># Contas</th><th>% das com call</th></tr></thead><tbody><tr>
+      <td>Problema ou falta de dados (cliente não compartilha)</td>
+      <td>9</td>
+      <td>52.9%</td>
+    </tr><tr>
+      <td>Cliente não aderente / sub-utilização</td>
+      <td>3</td>
+      <td>17.6%</td>
+    </tr><tr>
+      <td>Sem outcome demonstrado em 3M</td>
+      <td>2</td>
+      <td>11.8%</td>
+    </tr><tr>
+      <td>Não identificado (revisar caso a caso)</td>
+      <td>1</td>
+      <td>5.9%</td>
+    </tr><tr>
+      <td>Em fase de implantação - sub-aproveitado</td>
+      <td>1</td>
+      <td>5.9%</td>
+    </tr><tr>
+      <td>Falta controle de funil (cliente sem CRM)</td>
+      <td>1</td>
+      <td>5.9%</td>
+    </tr></tbody></table><div class="section-label">Histórico · top motivos de churn (2024-2025) · referência</div><table><thead><tr><th>Motivo</th><th># Logos</th><th>ARR perdido</th></tr></thead><tbody><tr>
+      <td>Uso pontual, baixa recorrência</td>
+      <td>10</td>
+      <td>R$ 473K</td>
+    </tr><tr>
+      <td>Mudou prioridade de investimento</td>
+      <td>9</td>
+      <td>R$ 394K</td>
+    </tr><tr>
+      <td>Inadimplência</td>
+      <td>5</td>
+      <td>R$ 170K</td>
+    </tr><tr>
+      <td>Concorrência oferecendo preços melhores</td>
+      <td>3</td>
+      <td>R$ 120K</td>
+    </tr><tr>
+      <td>Ausência de funcionalidades</td>
+      <td>2</td>
+      <td>R$ 115K</td>
+    </tr><tr>
+      <td>Problema ou falta de dados</td>
+      <td>2</td>
+      <td>R$ 126K</td>
+    </tr><tr>
+      <td>Promessas do discurso de venda não atendidas</td>
+      <td>1</td>
+      <td>R$ 102K</td>
+    </tr><tr>
+      <td>Fusão, aquisição ou falência</td>
+      <td>2</td>
+      <td>R$ 85K</td>
+    </tr><tr>
+      <td>Atingiu objetivo da contratação</td>
+      <td>1</td>
+      <td>R$ 78K</td>
+    </tr><tr>
+      <td>Cliente não aderente</td>
+      <td>2</td>
+      <td>R$ 60K</td>
+    </tr></tbody></table><div class="callout amber"><strong>Alerta executivo:</strong> Os motivos inferidos para o Q2 2026 se alinham aos top 3 históricos (Uso pontual · Falta de dados · Cliente não aderente). O padrão é estrutural — exige correção no momento do onboarding (Sales Engagement) para impedir a próxima safra de churn.</div></div>
+</div>
+
+<script>
+const DATA = {"meta": {"n_calls": 468, "n_contas_calls": 106, "n_css": 4, "css": ["Macir Junior", "Rafael Ferreira", "Thiago Garcia", "Victor Reis"], "janela": "Jan–Abr 2026", "quarter_foco": "Q2 2026", "n_em_risco_q2": 29, "risco_total_q2": 2400967.23}, "tab1": {"n_calls": 468, "n_contas": 106, "cobertura_estruturada_pct": 79.2, "contas_estruturadas": 84, "contas_total": 106, "milestone_dist": [{"label": "Sales Engagement", "count": 265, "pct": 56.6, "nota": 6.55, "duracao": 41.5}, {"label": "Sales Performance", "count": 200, "pct": 42.7, "nota": 7.39, "duracao": 37.5}, {"label": "QBR", "count": 3, "pct": 0.6, "nota": 8.0, "duracao": 26.6}], "cs_perf": [{"cs": "Macir Junior", "n": 96, "nota": 6.67, "pct_low": 33.33, "fala_cli": 41.73, "duracao": 37.95}, {"cs": "Rafael Ferreira", "n": 149, "nota": 6.68, "pct_low": 28.86, "fala_cli": 37.83, "duracao": 41.37}, {"cs": "Thiago Garcia", "n": 160, "nota": 6.77, "pct_low": 33.75, "fala_cli": 36.53, "duracao": 37.67}, {"cs": "Victor Reis", "n": 83, "nota": 6.67, "pct_low": 20.48, "fala_cli": 38.64, "duracao": 36.0}], "n_excluidas": 20, "nota_excluidas": 1.8}, "tab2": {"n_em_risco": 29, "n_cadencia_fraca": 10, "contas_cadencia_fraca": [{"account_raw": "ALICE", "cs": "Macir Junior", "nota": 8.0, "n_calls": 1, "dias_sem_call": 85, "mes_churn": "mai.", "motivo_inferido": "Sem outcome demonstrado em 3M", "risco_pess": 138915.36, "plano_sugerido": "QBR de diagnóstico de funil · workshop conversão Acc→Opp · plano com vendas do cliente"}, {"account_raw": "GALCORR", "cs": "Macir Junior", "nota": 6.0, "n_calls": 1, "dias_sem_call": 92, "mes_churn": "abr.", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "risco_pess": 126240.0, "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente"}, {"account_raw": "PULSUS", "cs": "Thiago Garcia", "nota": 7.33, "n_calls": 3, "dias_sem_call": 64, "mes_churn": "mai.", "motivo_inferido": "Falta controle de funil (cliente sem CRM)", "risco_pess": 117000.0, "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente"}, {"account_raw": "GRUPO TPC", "cs": "Victor Reis", "nota": 7.0, "n_calls": 2, "dias_sem_call": -6, "mes_churn": "abr.", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "risco_pess": 105960.0, "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente"}, {"account_raw": "Almata Química", "cs": "Victor Reis", "nota": 6.5, "n_calls": 6, "dias_sem_call": 60, "mes_churn": "mai.", "motivo_inferido": "Em fase de implantação - sub-aproveitado", "risco_pess": 95449.44, "plano_sugerido": "Acelerar onboarding · validação de target accounts · QBR 30/60/90"}, {"account_raw": "Madripel Embalagens", "cs": "Thiago Garcia", "nota": 5.75, "n_calls": 4, "dias_sem_call": 64, "mes_churn": "jun.", "motivo_inferido": "Cliente não aderente / sub-utilização", "risco_pess": 90000.0, "plano_sugerido": "Reuniões executivas com sponsor · plano de adoção por usuário"}, {"account_raw": "PRESTEX", "cs": "Thiago Garcia", "nota": 5.33, "n_calls": 3, "dias_sem_call": 50, "mes_churn": "mai.", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "risco_pess": 65991.96, "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente"}, {"account_raw": "DEEP ESG", "cs": "Rafael Ferreira", "nota": 6.5, "n_calls": 2, "dias_sem_call": -3, "mes_churn": "mai.", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "risco_pess": null, "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente"}, {"account_raw": "OCTADESK", "cs": "Thiago Garcia", "nota": 6.0, "n_calls": 1, "dias_sem_call": 1, "mes_churn": "abr.", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "risco_pess": null, "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente"}, {"account_raw": "ORACLE DO BRASIL SISTEMAS LTDA", "cs": "Thiago Garcia", "nota": 7.0, "n_calls": 2, "dias_sem_call": 53, "mes_churn": "abr.", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "risco_pess": null, "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente"}], "todas_em_risco": [{"account_raw": "DreamShaper (BU: Educbank)", "cs": "Macir Junior", "csm_grr": "Macir Junior", "nota": 8.0, "n_calls": 6, "mes_churn": "jun.", "reducao_churn": "Churn", "motivo_inferido": "Sem outcome demonstrado em 3M", "risco_pess": 144000.0, "plano_sugerido": "QBR de diagnóstico de funil · workshop conversão Acc→Opp · plano com vendas do cliente"}, {"account_raw": "DreamShaper (BU: Educbank)", "cs": "Macir Junior", "csm_grr": "Macir Junior", "nota": 8.0, "n_calls": 6, "mes_churn": "jun.", "reducao_churn": "Churn", "motivo_inferido": "Sem outcome demonstrado em 3M", "risco_pess": 144000.0, "plano_sugerido": "QBR de diagnóstico de funil · workshop conversão Acc→Opp · plano com vendas do cliente"}, {"account_raw": "ALICE", "cs": "Macir Junior", "csm_grr": "Gabriel Novaes", "nota": 8.0, "n_calls": 1, "mes_churn": "mai.", "reducao_churn": "Churn", "motivo_inferido": "Sem outcome demonstrado em 3M", "risco_pess": 138915.36, "plano_sugerido": "QBR de diagnóstico de funil · workshop conversão Acc→Opp · plano com vendas do cliente"}, {"account_raw": "GALCORR", "cs": "Macir Junior", "csm_grr": "Macir Junior", "nota": 6.0, "n_calls": 1, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "risco_pess": 126240.0, "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente"}, {"account_raw": "PULSUS", "cs": "Thiago Garcia", "csm_grr": "Victor Reis", "nota": 7.33, "n_calls": 3, "mes_churn": "mai.", "reducao_churn": "Churn", "motivo_inferido": "Falta controle de funil (cliente sem CRM)", "risco_pess": 117000.0, "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente"}, {"account_raw": "GRUPO TPC", "cs": "Victor Reis", "csm_grr": "Victor Reis", "nota": 7.0, "n_calls": 2, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "risco_pess": 105960.0, "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente"}, {"account_raw": "ACTIVE CLOUD SOLUTIONS", "cs": "Victor Reis", "csm_grr": "Victor Reis", "nota": 8.25, "n_calls": 8, "mes_churn": "mai.", "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "risco_pess": 95820.0, "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente"}, {"account_raw": "Almata Química", "cs": "Victor Reis", "csm_grr": "Victor Reis", "nota": 6.5, "n_calls": 6, "mes_churn": "mai.", "reducao_churn": "Churn", "motivo_inferido": "Em fase de implantação - sub-aproveitado", "risco_pess": 95449.44, "plano_sugerido": "Acelerar onboarding · validação de target accounts · QBR 30/60/90"}, {"account_raw": "Madripel Embalagens", "cs": "Thiago Garcia", "csm_grr": "Rafael Ferreira", "nota": 5.75, "n_calls": 4, "mes_churn": "jun.", "reducao_churn": "Churn", "motivo_inferido": "Cliente não aderente / sub-utilização", "risco_pess": 90000.0, "plano_sugerido": "Reuniões executivas com sponsor · plano de adoção por usuário"}, {"account_raw": "PEOPLEPRO", "cs": "Thiago Garcia", "csm_grr": "Thiago Garcia", "nota": 8.0, "n_calls": 4, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "risco_pess": 90000.0, "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente"}, {"account_raw": "PRESTEX", "cs": "Thiago Garcia", "csm_grr": "Victor Reis", "nota": 5.33, "n_calls": 3, "mes_churn": "mai.", "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "risco_pess": 65991.96, "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente"}, {"account_raw": "DEEP ESG", "cs": "Rafael Ferreira", "csm_grr": "Rafael Ferreira", "nota": 6.5, "n_calls": 2, "mes_churn": "mai.", "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "risco_pess": null, "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente"}, {"account_raw": "Gooroocredito", "cs": "Rafael Ferreira", "csm_grr": "Rafael Ferreira", "nota": 6.17, "n_calls": 6, "mes_churn": "jun.", "reducao_churn": "Churn", "motivo_inferido": "Cliente não aderente / sub-utilização", "risco_pess": null, "plano_sugerido": "Reuniões executivas com sponsor · plano de adoção por usuário"}, {"account_raw": "OCTADESK", "cs": "Thiago Garcia", "csm_grr": "Thiago Garcia", "nota": 6.0, "n_calls": 1, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "risco_pess": null, "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente"}, {"account_raw": "ORACLE DO BRASIL SISTEMAS LTDA", "cs": "Thiago Garcia", "csm_grr": "Thiago Garcia", "nota": 7.0, "n_calls": 2, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "risco_pess": null, "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente"}, {"account_raw": "SPFLEX MANGUEIRAS E CONEXÕES", "cs": "Rafael Ferreira", "csm_grr": "Rafael Ferreira", "nota": 5.86, "n_calls": 7, "mes_churn": "mai.", "reducao_churn": "Churn", "motivo_inferido": "Cliente não aderente / sub-utilização", "risco_pess": null, "plano_sugerido": "Reuniões executivas com sponsor · plano de adoção por usuário"}, {"account_raw": "yokohama-tws.com", "cs": "Thiago Garcia", "csm_grr": "Victor Reis", "nota": 7.2, "n_calls": 5, "mes_churn": "jun.", "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "risco_pess": null, "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente"}]}, "tab3": {"nota_media": 6.92, "n_high": 102, "n_mid": 240, "n_low": 126, "pct_high": 21.8, "pct_mid": 51.3, "pct_low": 26.9, "cs_vs_meta": [{"cs": "Macir Junior", "nota": 6.67, "pct_low": 33.33, "meta": 8.0, "vs_meta": -1.33}, {"cs": "Rafael Ferreira", "nota": 6.68, "pct_low": 28.86, "meta": 8.0, "vs_meta": -1.32}, {"cs": "Thiago Garcia", "nota": 6.77, "pct_low": 33.75, "meta": 8.0, "vs_meta": -1.23}, {"cs": "Victor Reis", "nota": 6.67, "pct_low": 20.48, "meta": 8.0, "vs_meta": -1.33}], "cs_principal_ofensor": {"Macir Junior": "Preparação prévia", "Rafael Ferreira": "Escuta ativa", "Thiago Garcia": "Escuta ativa", "Victor Reis": "Escuta ativa"}, "ofensores": [{"dim": "escuta_ativa", "label": "Escuta ativa", "pct": 60.3, "desc": "Cliente fala <30% · poucas perguntas abertas"}, {"dim": "preparacao", "label": "Preparação prévia", "pct": 44.5, "desc": "Sem contexto, dados ou referência à call anterior"}, {"dim": "geracao_valor", "label": "Geração de valor", "pct": 41.1, "desc": "Sem benchmark, métrica ou recomendação clara"}, {"dim": "proximos_passos", "label": "Próximos passos", "pct": 37.7, "desc": "Sem responsável + prazo no fechamento"}, {"dim": "agenda_estruturada", "label": "Agenda estruturada", "pct": 26.7, "desc": "Sem objetivo explícito + controle de tempo"}], "fortalezas": [{"dim": "preparacao", "label": "Preparação prévia", "pct": 99.0}, {"dim": "proximos_passos", "label": "Próximos passos", "pct": 97.1}, {"dim": "escuta_ativa", "label": "Escuta ativa", "pct": 86.3}, {"dim": "geracao_valor", "label": "Geração de valor", "pct": 83.3}, {"dim": "agenda_estruturada", "label": "Agenda estruturada", "pct": 47.1}], "piores_risco": [{"account_raw": "GALCORR", "cs": "Macir Junior", "nota": 6.0, "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "risco_pess": 126240.0, "n_calls": 1}, {"account_raw": "BRR Crédito Digital", "cs": "Victor Reis", "nota": 3.42, "reducao_churn": "Churn", "motivo_inferido": "Falta controle de funil (cliente sem CRM)", "risco_pess": 96000.0, "n_calls": 12}, {"account_raw": "Hexxa Metal", "cs": "Rafael Ferreira", "nota": 6.4, "reducao_churn": "Churn", "motivo_inferido": "Cliente não aderente / sub-utilização", "risco_pess": 96000.0, "n_calls": 5}, {"account_raw": "Almata Química", "cs": "Victor Reis", "nota": 6.5, "reducao_churn": "Churn", "motivo_inferido": "Em fase de implantação - sub-aproveitado", "risco_pess": 95449.44, "n_calls": 6}, {"account_raw": "DOT DIGITAL GROUP", "cs": "Macir Junior", "nota": 3.0, "reducao_churn": "Churn", "motivo_inferido": "Cliente não aderente / sub-utilização", "risco_pess": 94816.08, "n_calls": 1}, {"account_raw": "Madripel Embalagens", "cs": "Thiago Garcia", "nota": 5.75, "reducao_churn": "Churn", "motivo_inferido": "Cliente não aderente / sub-utilização", "risco_pess": 90000.0, "n_calls": 4}, {"account_raw": "PRESTEX", "cs": "Thiago Garcia", "nota": 5.33, "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "risco_pess": 65991.96, "n_calls": 3}, {"account_raw": "DEEP ESG", "cs": "Rafael Ferreira", "nota": 6.5, "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "risco_pess": null, "n_calls": 2}, {"account_raw": "Gooroocredito", "cs": "Rafael Ferreira", "nota": 6.17, "reducao_churn": "Churn", "motivo_inferido": "Cliente não aderente / sub-utilização", "risco_pess": null, "n_calls": 6}, {"account_raw": "OCTADESK", "cs": "Thiago Garcia", "nota": 6.0, "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "risco_pess": null, "n_calls": 1}], "expansao": [{"account_raw": "ASAAS", "cs": "Thiago Garcia", "nota": 9.25, "sentimento": "Sem dados", "vendas_3m": 0.0, "opps_3m": 0.0, "mrr": null, "n_calls": 4}, {"account_raw": "WITTEL COMUNICACAO LTDA", "cs": "Macir Junior", "nota": 9.0, "sentimento": "Sem dados", "vendas_3m": null, "opps_3m": null, "mrr": null, "n_calls": 1}, {"account_raw": "CELCOIN", "cs": "Macir Junior", "nota": 9.0, "sentimento": "Sem dados", "vendas_3m": 0.0, "opps_3m": 0.0, "mrr": null, "n_calls": 1}, {"account_raw": "CIRION TECHNOLOGIES", "cs": "Victor Reis", "nota": 9.0, "sentimento": "Sem dados", "vendas_3m": null, "opps_3m": null, "mrr": null, "n_calls": 1}, {"account_raw": "GRUPO OLX", "cs": "Macir Junior", "nota": 9.0, "sentimento": "Ruim", "vendas_3m": 0.0, "opps_3m": 0.0, "mrr": null, "n_calls": 1}, {"account_raw": "GoodStorage", "cs": "Victor Reis", "nota": 9.0, "sentimento": "Sem dados", "vendas_3m": 0.0, "opps_3m": 0.0, "mrr": null, "n_calls": 2}, {"account_raw": "DreamShaper (BU: iScholar)", "cs": "Macir Junior", "nota": 9.0, "sentimento": "Sem dados", "vendas_3m": null, "opps_3m": null, "mrr": null, "n_calls": 1}, {"account_raw": "Litroz on", "cs": "Rafael Ferreira", "nota": 8.75, "sentimento": "Neutro", "vendas_3m": 0.0, "opps_3m": 8.0, "mrr": null, "n_calls": 4}, {"account_raw": "SAQUE E PAGUE", "cs": "Macir Junior", "nota": 8.75, "sentimento": "Neutro", "vendas_3m": 0.0, "opps_3m": 0.0, "mrr": null, "n_calls": 4}, {"account_raw": "UPFLUX", "cs": "Thiago Garcia", "nota": 8.57, "sentimento": "Neutro", "vendas_3m": 0.0, "opps_3m": 11.0, "mrr": null, "n_calls": 7}]}, "tab4": {"quad_counts": {"sem_dados": 48, "q2_investigar": 21, "q4_risco_critico": 12, "q5_neutro": 10, "q6_atencao": 7, "q1_acerto": 5, "q3_risco_latente": 3}, "mapeamento": [{"account_raw": "ABSOLUTA SAUDE", "cs": "Thiago Garcia", "nota": 7.56, "sentimento": "Bom", "resultado_mapeado": "38 opps · 4396 leads", "vs_benchmark": "Lead→Opp: 0.9% abaixo", "quadrante": "q1_acerto", "reducao_churn": null, "risco_pess": null}, {"account_raw": "VERZANI & SANDRINI", "cs": "Macir Junior", "nota": 8.0, "sentimento": "Bom", "resultado_mapeado": "364 leads", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q1_acerto", "reducao_churn": null, "risco_pess": null}, {"account_raw": "V360", "cs": "Thiago Garcia", "nota": 8.0, "sentimento": "Bom", "resultado_mapeado": "1340 leads", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q1_acerto", "reducao_churn": null, "risco_pess": null}, {"account_raw": "BSA", "cs": "Thiago Garcia", "nota": 7.0, "sentimento": "Bom", "resultado_mapeado": "98 vendas · 923 opps · 5415 leads", "vs_benchmark": "Lead→Opp: 17.0% dentro", "quadrante": "q1_acerto", "reducao_churn": null, "risco_pess": null}, {"account_raw": "CTA SMART", "cs": "Macir Junior", "nota": 8.0, "sentimento": "Bom", "resultado_mapeado": "13 vendas · 59 opps · 1700 leads", "vs_benchmark": "Lead→Opp: 3.5% abaixo", "quadrante": "q1_acerto", "reducao_churn": null, "risco_pess": null}, {"account_raw": "WLM IND COM", "cs": "Macir Junior", "nota": 7.0, "sentimento": "Péssimo", "resultado_mapeado": "90 leads · MRR R$ 23K", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q2_investigar", "reducao_churn": "Churn", "risco_pess": null}, {"account_raw": "UMOV.ME S.A.", "cs": "Rafael Ferreira", "nota": 7.33, "sentimento": "Péssimo", "resultado_mapeado": "386 leads · MRR R$ 11K", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q2_investigar", "reducao_churn": "Churn", "risco_pess": 141600.0}, {"account_raw": "SPS GROUP", "cs": "Victor Reis", "nota": 7.5, "sentimento": "Péssimo", "resultado_mapeado": "378 leads · MRR R$ 9K", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q2_investigar", "reducao_churn": "Churn", "risco_pess": null}, {"account_raw": "REMESSA ONLINE", "cs": "Macir Junior", "nota": 9.0, "sentimento": "Péssimo", "resultado_mapeado": "MRR R$ 8K", "vs_benchmark": "sem dados", "quadrante": "q2_investigar", "reducao_churn": "Churn", "risco_pess": null}, {"account_raw": "PULSUS", "cs": "Thiago Garcia", "nota": 7.33, "sentimento": "Péssimo", "resultado_mapeado": "2 leads · MRR R$ 9K", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q2_investigar", "reducao_churn": "Churn", "risco_pess": 117000.0}, {"account_raw": "PEOPLEPRO", "cs": "Thiago Garcia", "nota": 8.0, "sentimento": "Péssimo", "resultado_mapeado": "367 leads · MRR R$ 7K", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q2_investigar", "reducao_churn": "Churn", "risco_pess": 90000.0}, {"account_raw": "PAYTRACK", "cs": "Macir Junior", "nota": 8.0, "sentimento": "Ruim", "resultado_mapeado": "1 opps · 34 leads · MRR R$ 8K", "vs_benchmark": "Lead→Opp: 2.9% abaixo", "quadrante": "q2_investigar", "reducao_churn": "Redução", "risco_pess": 5172.36}, {"account_raw": "ORACLE DO BRASIL SISTEMAS LTDA", "cs": "Thiago Garcia", "nota": 7.0, "sentimento": "Péssimo", "resultado_mapeado": "38 opps · 3810 leads · MRR R$ 12K", "vs_benchmark": "Lead→Opp: 1.0% abaixo", "quadrante": "q2_investigar", "reducao_churn": "Churn", "risco_pess": null}, {"account_raw": "GRUPO TPC", "cs": "Victor Reis", "nota": 7.0, "sentimento": "Péssimo", "resultado_mapeado": "137 leads · MRR R$ 8K", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q2_investigar", "reducao_churn": "Churn", "risco_pess": 105960.0}, {"account_raw": "GRUPO OLX", "cs": "Macir Junior", "nota": 9.0, "sentimento": "Ruim", "resultado_mapeado": "sem dados", "vs_benchmark": "sem dados", "quadrante": "q2_investigar", "reducao_churn": null, "risco_pess": null}, {"account_raw": "FRETADAO", "cs": "Macir Junior", "nota": 8.0, "sentimento": "Péssimo", "resultado_mapeado": "5 opps · 291 leads · MRR R$ 8K", "vs_benchmark": "Lead→Opp: 1.7% abaixo", "quadrante": "q2_investigar", "reducao_churn": "Churn", "risco_pess": null}, {"account_raw": "yokohama-tws.com", "cs": "Thiago Garcia", "nota": 7.2, "sentimento": "Péssimo", "resultado_mapeado": "MRR R$ 8K", "vs_benchmark": "sem dados", "quadrante": "q2_investigar", "reducao_churn": "Churn", "risco_pess": null}, {"account_raw": "CATHO", "cs": "Macir Junior", "nota": 7.83, "sentimento": "Péssimo", "resultado_mapeado": "1500 leads · MRR R$ 11K", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q2_investigar", "reducao_churn": "Churn", "risco_pess": null}, {"account_raw": "DreamShaper (BU: Educbank)", "cs": "Macir Junior", "nota": 8.0, "sentimento": "Péssimo", "resultado_mapeado": "MRR R$ 12K", "vs_benchmark": "sem dados", "quadrante": "q2_investigar", "reducao_churn": "Churn", "risco_pess": 144000.0}, {"account_raw": "ACTIVE CLOUD SOLUTIONS", "cs": "Victor Reis", "nota": 8.25, "sentimento": "Péssimo", "resultado_mapeado": "1591 leads · MRR R$ 7K", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q2_investigar", "reducao_churn": "Churn", "risco_pess": 95820.0}, {"account_raw": "ALICE", "cs": "Macir Junior", "nota": 8.0, "sentimento": "Péssimo", "resultado_mapeado": "MRR R$ 11K", "vs_benchmark": "sem dados", "quadrante": "q2_investigar", "reducao_churn": "Churn", "risco_pess": 138915.36}, {"account_raw": "B2Finance Auditoria e Consultoria Ltda", "cs": "Thiago Garcia", "nota": 7.67, "sentimento": "Péssimo", "resultado_mapeado": "18 opps · 632 leads · MRR R$ 8K", "vs_benchmark": "Lead→Opp: 2.8% abaixo", "quadrante": "q2_investigar", "reducao_churn": "Churn", "risco_pess": 96000.0}, {"account_raw": "DreamShaper (BU: Educbank)", "cs": "Macir Junior", "nota": 8.0, "sentimento": "Péssimo", "resultado_mapeado": "MRR R$ 12K", "vs_benchmark": "sem dados", "quadrante": "q2_investigar", "reducao_churn": "Churn", "risco_pess": 144000.0}, {"account_raw": "CRED MHS", "cs": "Thiago Garcia", "nota": 8.5, "sentimento": "Péssimo", "resultado_mapeado": "1202 leads · MRR R$ 7K", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q2_investigar", "reducao_churn": "Churn", "risco_pess": null}, {"account_raw": "Cimentos do Brasil SA", "cs": "Rafael Ferreira", "nota": 9.0, "sentimento": "Péssimo", "resultado_mapeado": "500 leads · MRR R$ 7K", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q2_investigar", "reducao_churn": "Churn", "risco_pess": null}, {"account_raw": "Corp Comunicação", "cs": "Thiago Garcia", "nota": 7.33, "sentimento": "Péssimo", "resultado_mapeado": "51 leads · MRR R$ 9K", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q2_investigar", "reducao_churn": "Churn", "risco_pess": 114000.0}, {"account_raw": "TRIPLA", "cs": "Macir Junior", "nota": 6.0, "sentimento": "Bom", "resultado_mapeado": "220 leads", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q3_risco_latente", "reducao_churn": null, "risco_pess": null}, {"account_raw": "ZEEV", "cs": "Thiago Garcia", "nota": 6.62, "sentimento": "Bom", "resultado_mapeado": "200 leads", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q3_risco_latente", "reducao_churn": null, "risco_pess": null}, {"account_raw": "FKB EQUIPAMENTOS LTDA", "cs": "Thiago Garcia", "nota": 6.5, "sentimento": "Bom", "resultado_mapeado": "1 vendas · 4 opps · 100 leads", "vs_benchmark": "Lead→Opp: 4.0% abaixo", "quadrante": "q3_risco_latente", "reducao_churn": null, "risco_pess": null}, {"account_raw": "Madripel Embalagens", "cs": "Thiago Garcia", "nota": 5.75, "sentimento": "Péssimo", "resultado_mapeado": "500 leads · MRR R$ 7K", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q4_risco_critico", "reducao_churn": "Churn", "risco_pess": 90000.0}, {"account_raw": "OCTADESK", "cs": "Thiago Garcia", "nota": 6.0, "sentimento": "Péssimo", "resultado_mapeado": "1092 leads · MRR R$ 9K", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q4_risco_critico", "reducao_churn": "Churn", "risco_pess": null}, {"account_raw": "GALCORR", "cs": "Macir Junior", "nota": 6.0, "sentimento": "Péssimo", "resultado_mapeado": "MRR R$ 10K", "vs_benchmark": "sem dados", "quadrante": "q4_risco_critico", "reducao_churn": "Churn", "risco_pess": 126240.0}, {"account_raw": "VALECARD", "cs": "Macir Junior", "nota": 5.14, "sentimento": "Péssimo", "resultado_mapeado": "32 vendas · 15 opps · 161 leads", "vs_benchmark": "Lead→Opp: 9.3% abaixo", "quadrante": "q4_risco_critico", "reducao_churn": "Churn", "risco_pess": null}, {"account_raw": "Hexxa Metal", "cs": "Rafael Ferreira", "nota": 6.4, "sentimento": "Péssimo", "resultado_mapeado": "MRR R$ 8K", "vs_benchmark": "sem dados", "quadrante": "q4_risco_critico", "reducao_churn": "Churn", "risco_pess": 96000.0}, {"account_raw": "PRESTEX", "cs": "Thiago Garcia", "nota": 5.33, "sentimento": "Péssimo", "resultado_mapeado": "MRR R$ 5K", "vs_benchmark": "sem dados", "quadrante": "q4_risco_critico", "reducao_churn": "Churn", "risco_pess": 65991.96}, {"account_raw": "Almata Química", "cs": "Victor Reis", "nota": 6.5, "sentimento": "Péssimo", "resultado_mapeado": "301 leads · MRR R$ 7K", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q4_risco_critico", "reducao_churn": "Churn", "risco_pess": 95449.44}, {"account_raw": "Gooroocredito", "cs": "Rafael Ferreira", "nota": 6.17, "sentimento": "Péssimo", "resultado_mapeado": "MRR R$ 8K", "vs_benchmark": "sem dados", "quadrante": "q4_risco_critico", "reducao_churn": "Churn", "risco_pess": null}, {"account_raw": "DOT DIGITAL GROUP", "cs": "Macir Junior", "nota": 3.0, "sentimento": "Péssimo", "resultado_mapeado": "200 leads · MRR R$ 7K", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q4_risco_critico", "reducao_churn": "Churn", "risco_pess": 94816.08}, {"account_raw": "SPFLEX MANGUEIRAS E CONEXÕES", "cs": "Rafael Ferreira", "nota": 5.86, "sentimento": "Péssimo", "resultado_mapeado": "MRR R$ 7K", "vs_benchmark": "sem dados", "quadrante": "q4_risco_critico", "reducao_churn": "Churn", "risco_pess": null}, {"account_raw": "BRR Crédito Digital", "cs": "Victor Reis", "nota": 3.42, "sentimento": "Péssimo", "resultado_mapeado": "147 leads · MRR R$ 8K", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q4_risco_critico", "reducao_churn": "Churn", "risco_pess": 96000.0}, {"account_raw": "DEEP ESG", "cs": "Rafael Ferreira", "nota": 6.5, "sentimento": "Péssimo", "resultado_mapeado": "68 leads · MRR R$ 7K", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q4_risco_critico", "reducao_churn": "Churn", "risco_pess": null}, {"account_raw": "VOCKAN", "cs": "Thiago Garcia", "nota": 8.0, "sentimento": "Neutro", "resultado_mapeado": "199 leads", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q5_neutro", "reducao_churn": null, "risco_pess": null}, {"account_raw": "UPFLUX", "cs": "Thiago Garcia", "nota": 8.57, "sentimento": "Neutro", "resultado_mapeado": "11 opps · 352 leads", "vs_benchmark": "Lead→Opp: 3.1% abaixo", "quadrante": "q5_neutro", "reducao_churn": null, "risco_pess": null}, {"account_raw": "UNIMED PORTO ALEGRE", "cs": "Victor Reis", "nota": 7.0, "sentimento": "Neutro", "resultado_mapeado": "490 leads", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q5_neutro", "reducao_churn": null, "risco_pess": null}, {"account_raw": "SYSTAX", "cs": "Macir Junior", "nota": 7.43, "sentimento": "Neutro", "resultado_mapeado": "sem dados", "vs_benchmark": "sem dados", "quadrante": "q5_neutro", "reducao_churn": null, "risco_pess": null}, {"account_raw": "SAQUE E PAGUE", "cs": "Macir Junior", "nota": 8.75, "sentimento": "Neutro", "resultado_mapeado": "sem dados", "vs_benchmark": "sem dados", "quadrante": "q5_neutro", "reducao_churn": null, "risco_pess": null}, {"account_raw": "Raiô Benefícios", "cs": "Thiago Garcia", "nota": 7.0, "sentimento": "Neutro", "resultado_mapeado": "2104 leads", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q5_neutro", "reducao_churn": null, "risco_pess": null}, {"account_raw": "CLICKSIGN", "cs": "Victor Reis", "nota": 7.38, "sentimento": "Neutro", "resultado_mapeado": "222 leads", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q5_neutro", "reducao_churn": null, "risco_pess": null}, {"account_raw": "JOOM GROUP", "cs": "Macir Junior", "nota": 8.0, "sentimento": "Neutro", "resultado_mapeado": "sem dados", "vs_benchmark": "sem dados", "quadrante": "q5_neutro", "reducao_churn": null, "risco_pess": null}, {"account_raw": "Litroz on", "cs": "Rafael Ferreira", "nota": 8.75, "sentimento": "Neutro", "resultado_mapeado": "8 opps · 367 leads", "vs_benchmark": "Lead→Opp: 2.2% abaixo", "quadrante": "q5_neutro", "reducao_churn": null, "risco_pess": null}, {"account_raw": "TD SYNNEX BRASIL LTDA", "cs": "Macir Junior", "nota": 7.0, "sentimento": "Neutro", "resultado_mapeado": "47 leads", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q5_neutro", "reducao_churn": null, "risco_pess": null}, {"account_raw": "MATERA", "cs": "Macir Junior", "nota": 5.0, "sentimento": "Neutro", "resultado_mapeado": "178 leads", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q6_atencao", "reducao_churn": null, "risco_pess": null}, {"account_raw": "SOLUTI DIGITAL", "cs": "Macir Junior", "nota": 4.2, "sentimento": "Neutro", "resultado_mapeado": "sem dados", "vs_benchmark": "sem dados", "quadrante": "q6_atencao", "reducao_churn": null, "risco_pess": null}, {"account_raw": "PENTARE CONSULTORIA", "cs": "Rafael Ferreira", "nota": 6.08, "sentimento": "Neutro", "resultado_mapeado": "1 leads", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q6_atencao", "reducao_churn": null, "risco_pess": null}, {"account_raw": "Vendemmia", "cs": "Thiago Garcia", "nota": 6.17, "sentimento": "Neutro", "resultado_mapeado": "908 leads", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q6_atencao", "reducao_churn": null, "risco_pess": null}, {"account_raw": "Foco Aluguel de Carros", "cs": "Victor Reis", "nota": 6.5, "sentimento": "Neutro", "resultado_mapeado": "2 opps · 510 leads", "vs_benchmark": "Lead→Opp: 0.4% abaixo", "quadrante": "q6_atencao", "reducao_churn": null, "risco_pess": null}, {"account_raw": "WORK ON", "cs": "Thiago Garcia", "nota": 6.75, "sentimento": "Neutro", "resultado_mapeado": "410 leads", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q6_atencao", "reducao_churn": null, "risco_pess": null}, {"account_raw": "Netsoft", "cs": "Macir Junior", "nota": 3.75, "sentimento": "Neutro", "resultado_mapeado": "649 leads", "vs_benchmark": "Lead→Opp: 0.0% abaixo", "quadrante": "q6_atencao", "reducao_churn": null, "risco_pess": null}]}, "tab5": {"Macir Junior": {"nota": 6.67, "vs_meta": -1.33, "pct_low": 33.3, "fala_cliente": 41.7, "duracao_media": 37.9, "n_calls": 96, "n_contas": 29, "ofensores": [{"dim": "preparacao", "label": "Preparação prévia", "pct": 50.0, "desc": "Sem contexto, dados ou referência à call anterior"}, {"dim": "escuta_ativa", "label": "Escuta ativa", "pct": 46.9, "desc": "Cliente fala <30% · poucas perguntas abertas"}, {"dim": "geracao_valor", "label": "Geração de valor", "pct": 37.5, "desc": "Sem benchmark, métrica ou recomendação clara"}], "fortalezas": [{"dim": "preparacao", "label": "Preparação prévia", "pct": 95.6}, {"dim": "proximos_passos", "label": "Próximos passos", "pct": 95.6}, {"dim": "escuta_ativa", "label": "Escuta ativa", "pct": 68.9}], "criticas": [{"account_raw": "GALCORR", "cs": "Macir Junior", "nota": 6.0, "n_calls": 1, "duracao_media": 25.4, "csm_grr": "Macir Junior", "mrr": 10520.0, "arr": 126240.0, "risco_pess": 126240.0, "reducao_churn": "Churn", "mes_churn": "abr.", "status_grr": "FORMALIZADO", "leads_3m": 0.0, "opps_3m": 0.0, "vendas_3m": 0.0, "percepcao_3m": null, "motivos_top": "Cliente não compartilha informações", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "sentimento": "Péssimo", "quadrante": "q4_risco_critico", "resultado_mapeado": "MRR R$ 10K", "vs_benchmark": "sem dados"}, {"account_raw": "DOT DIGITAL GROUP", "cs": "Macir Junior", "nota": 3.0, "n_calls": 1, "duracao_media": 15.8, "csm_grr": "Macir Junior", "mrr": 7901.34, "arr": 94816.08, "risco_pess": 94816.08, "reducao_churn": "Churn", "mes_churn": "ago.", "status_grr": "FORMALIZADO", "leads_3m": 200.0, "opps_3m": 0.0, "vendas_3m": 0.0, "percepcao_3m": 2.0, "motivos_top": "Time do cliente não utiliza plenamente a solução ou não segue o processo de vendas esperado", "motivo_inferido": "Cliente não aderente / sub-utilização", "plano_sugerido": "Reuniões executivas com sponsor · plano de adoção por usuário", "sentimento": "Péssimo", "quadrante": "q4_risco_critico", "resultado_mapeado": "200 leads · MRR R$ 7K", "vs_benchmark": "Lead→Opp: 0.0% abaixo"}, {"account_raw": "VALECARD", "cs": "Macir Junior", "nota": 5.14, "n_calls": 7, "duracao_media": 33.9, "csm_grr": "Macir Junior", "mrr": 28665.0, "arr": 343980.0, "risco_pess": null, "reducao_churn": "Churn", "mes_churn": "jan.", "status_grr": "FORA de risco", "leads_3m": 161.0, "opps_3m": 15.0, "vendas_3m": 32.0, "percepcao_3m": 2.33, "motivos_top": "Cliente não compartilha informações", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "sentimento": "Péssimo", "quadrante": "q4_risco_critico", "resultado_mapeado": "32 vendas · 15 opps · 161 leads", "vs_benchmark": "Lead→Opp: 9.3% abaixo"}], "expansao": [{"account_raw": "CELCOIN", "cs": "Macir Junior", "nota": 9.0, "n_calls": 1, "duracao_media": 37.4, "csm_grr": null, "mrr": null, "arr": null, "risco_pess": null, "reducao_churn": null, "mes_churn": null, "status_grr": null, "leads_3m": 145.0, "opps_3m": 0.0, "vendas_3m": 0.0, "percepcao_3m": null, "motivos_top": "Cliente não compartilha informações", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "sentimento": "Sem dados", "quadrante": "sem_dados", "resultado_mapeado": "145 leads", "vs_benchmark": "Lead→Opp: 0.0% abaixo"}, {"account_raw": "GRUPO OLX", "cs": "Macir Junior", "nota": 9.0, "n_calls": 1, "duracao_media": 28.9, "csm_grr": null, "mrr": null, "arr": null, "risco_pess": null, "reducao_churn": null, "mes_churn": null, "status_grr": null, "leads_3m": 0.0, "opps_3m": 0.0, "vendas_3m": 0.0, "percepcao_3m": 1.0, "motivos_top": "Time do cliente não utiliza plenamente a solução ou não segue o processo de vendas esperado", "motivo_inferido": "Cliente não aderente / sub-utilização", "plano_sugerido": "Reuniões executivas com sponsor · plano de adoção por usuário", "sentimento": "Ruim", "quadrante": "q2_investigar", "resultado_mapeado": "sem dados", "vs_benchmark": "sem dados"}, {"account_raw": "DreamShaper (BU: iScholar)", "cs": "Macir Junior", "nota": 9.0, "n_calls": 1, "duracao_media": 60.5, "csm_grr": null, "mrr": null, "arr": null, "risco_pess": null, "reducao_churn": null, "mes_churn": null, "status_grr": null, "leads_3m": null, "opps_3m": null, "vendas_3m": null, "percepcao_3m": null, "motivos_top": null, "motivo_inferido": "Não identificado (revisar caso a caso)", "plano_sugerido": "Diagnóstico aprofundado · entrevista de churn · escalonamento ao líder", "sentimento": "Sem dados", "quadrante": "sem_dados", "resultado_mapeado": "sem dados", "vs_benchmark": "sem dados"}, {"account_raw": "WITTEL COMUNICACAO LTDA", "cs": "Macir Junior", "nota": 9.0, "n_calls": 1, "duracao_media": 57.9, "csm_grr": null, "mrr": null, "arr": null, "risco_pess": null, "reducao_churn": null, "mes_churn": null, "status_grr": null, "leads_3m": null, "opps_3m": null, "vendas_3m": null, "percepcao_3m": null, "motivos_top": null, "motivo_inferido": "Não identificado (revisar caso a caso)", "plano_sugerido": "Diagnóstico aprofundado · entrevista de churn · escalonamento ao líder", "sentimento": "Sem dados", "quadrante": "sem_dados", "resultado_mapeado": "sem dados", "vs_benchmark": "sem dados"}, {"account_raw": "SAQUE E PAGUE", "cs": "Macir Junior", "nota": 8.75, "n_calls": 4, "duracao_media": 27.2, "csm_grr": null, "mrr": null, "arr": null, "risco_pess": null, "reducao_churn": null, "mes_churn": null, "status_grr": null, "leads_3m": 0.0, "opps_3m": 0.0, "vendas_3m": 0.0, "percepcao_3m": 2.0, "motivos_top": "Cliente não compartilha informações; Dados de vendas desatualizados, incompletos ou registrados de forma diferente; Time do cliente não utiliza plenamente a solução ou não segue o processo de vendas esperado", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "sentimento": "Neutro", "quadrante": "q5_neutro", "resultado_mapeado": "sem dados", "vs_benchmark": "sem dados"}]}, "Rafael Ferreira": {"nota": 6.68, "vs_meta": -1.32, "pct_low": 28.9, "fala_cliente": 37.8, "duracao_media": 41.4, "n_calls": 149, "n_contas": 23, "ofensores": [{"dim": "escuta_ativa", "label": "Escuta ativa", "pct": 60.5, "desc": "Cliente fala <30% · poucas perguntas abertas"}, {"dim": "proximos_passos", "label": "Próximos passos", "pct": 48.8, "desc": "Sem responsável + prazo no fechamento"}, {"dim": "geracao_valor", "label": "Geração de valor", "pct": 48.8, "desc": "Sem benchmark, métrica ou recomendação clara"}], "fortalezas": [{"dim": "preparacao", "label": "Preparação prévia", "pct": 98.5}, {"dim": "proximos_passos", "label": "Próximos passos", "pct": 90.9}, {"dim": "geracao_valor", "label": "Geração de valor", "pct": 83.3}], "criticas": [{"account_raw": "Hexxa Metal", "cs": "Rafael Ferreira", "nota": 6.4, "n_calls": 5, "duracao_media": 33.4, "csm_grr": "Macir Junior", "mrr": 8000.0, "arr": 96000.0, "risco_pess": 96000.0, "reducao_churn": "Churn", "mes_churn": "mar.", "status_grr": "FORMALIZADO", "leads_3m": 0.0, "opps_3m": 0.0, "vendas_3m": 0.0, "percepcao_3m": null, "motivos_top": "Falta de controle de funil (CRM, Planilha e outras fontes de informação); Time do cliente não utiliza plenamente a solução ou não segue o processo de vendas esperado", "motivo_inferido": "Cliente não aderente / sub-utilização", "plano_sugerido": "Reuniões executivas com sponsor · plano de adoção por usuário", "sentimento": "Péssimo", "quadrante": "q4_risco_critico", "resultado_mapeado": "MRR R$ 8K", "vs_benchmark": "sem dados"}, {"account_raw": "DEEP ESG", "cs": "Rafael Ferreira", "nota": 6.5, "n_calls": 2, "duracao_media": 35.7, "csm_grr": "Rafael Ferreira", "mrr": 7354.17, "arr": 88250.04, "risco_pess": null, "reducao_churn": "Churn", "mes_churn": "mai.", "status_grr": "FORA de risco", "leads_3m": 68.0, "opps_3m": 0.0, "vendas_3m": 0.0, "percepcao_3m": null, "motivos_top": "Cliente não compartilha informações; Time do cliente não utiliza plenamente a solução ou não segue o processo de vendas esperado", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "sentimento": "Péssimo", "quadrante": "q4_risco_critico", "resultado_mapeado": "68 leads · MRR R$ 7K", "vs_benchmark": "Lead→Opp: 0.0% abaixo"}, {"account_raw": "Gooroocredito", "cs": "Rafael Ferreira", "nota": 6.17, "n_calls": 6, "duracao_media": 28.0, "csm_grr": "Rafael Ferreira", "mrr": 8833.0, "arr": 105996.0, "risco_pess": null, "reducao_churn": "Churn", "mes_churn": "jun.", "status_grr": "FORA de risco", "leads_3m": 0.0, "opps_3m": 0.0, "vendas_3m": 0.0, "percepcao_3m": null, "motivos_top": "Falta de controle de funil (CRM, Planilha e outras fontes de informação); Time do cliente não utiliza plenamente a solução ou não segue o processo de vendas esperado", "motivo_inferido": "Cliente não aderente / sub-utilização", "plano_sugerido": "Reuniões executivas com sponsor · plano de adoção por usuário", "sentimento": "Péssimo", "quadrante": "q4_risco_critico", "resultado_mapeado": "MRR R$ 8K", "vs_benchmark": "sem dados"}, {"account_raw": "SPFLEX MANGUEIRAS E CONEXÕES", "cs": "Rafael Ferreira", "nota": 5.86, "n_calls": 7, "duracao_media": 44.7, "csm_grr": "Rafael Ferreira", "mrr": 7500.0, "arr": 90000.0, "risco_pess": null, "reducao_churn": "Churn", "mes_churn": "mai.", "status_grr": "FORA de risco", "leads_3m": 0.0, "opps_3m": 0.0, "vendas_3m": 0.0, "percepcao_3m": null, "motivos_top": "Falta de controle de funil (CRM, Planilha e outras fontes de informação); Time do cliente não utiliza plenamente a solução ou não segue o processo de vendas esperado", "motivo_inferido": "Cliente não aderente / sub-utilização", "plano_sugerido": "Reuniões executivas com sponsor · plano de adoção por usuário", "sentimento": "Péssimo", "quadrante": "q4_risco_critico", "resultado_mapeado": "MRR R$ 7K", "vs_benchmark": "sem dados"}], "expansao": [{"account_raw": "Litroz on", "cs": "Rafael Ferreira", "nota": 8.75, "n_calls": 4, "duracao_media": 45.4, "csm_grr": null, "mrr": null, "arr": null, "risco_pess": null, "reducao_churn": null, "mes_churn": null, "status_grr": null, "leads_3m": 367.0, "opps_3m": 8.0, "vendas_3m": 0.0, "percepcao_3m": 2.0, "motivos_top": "Falta de controle de funil (CRM, Planilha e outras fontes de informação); Time do cliente não utiliza plenamente a solução ou não segue o processo de vendas esperado", "motivo_inferido": "Cliente não aderente / sub-utilização", "plano_sugerido": "Reuniões executivas com sponsor · plano de adoção por usuário", "sentimento": "Neutro", "quadrante": "q5_neutro", "resultado_mapeado": "8 opps · 367 leads", "vs_benchmark": "Lead→Opp: 2.2% abaixo"}, {"account_raw": "IT UNIVERSE", "cs": "Rafael Ferreira", "nota": 8.5, "n_calls": 6, "duracao_media": 39.2, "csm_grr": null, "mrr": null, "arr": null, "risco_pess": null, "reducao_churn": null, "mes_churn": null, "status_grr": null, "leads_3m": 194.0, "opps_3m": 7.0, "vendas_3m": 0.0, "percepcao_3m": null, "motivos_top": "Falta de controle de funil (CRM, Planilha e outras fontes de informação); Time do cliente não utiliza plenamente a solução ou não segue o processo de vendas esperado", "motivo_inferido": "Cliente não aderente / sub-utilização", "plano_sugerido": "Reuniões executivas com sponsor · plano de adoção por usuário", "sentimento": "Sem dados", "quadrante": "sem_dados", "resultado_mapeado": "7 opps · 194 leads", "vs_benchmark": "Lead→Opp: 3.6% abaixo"}, {"account_raw": "Construtora Costa Feitosa", "cs": "Rafael Ferreira", "nota": 8.33, "n_calls": 3, "duracao_media": 52.3, "csm_grr": null, "mrr": null, "arr": null, "risco_pess": null, "reducao_churn": null, "mes_churn": null, "status_grr": null, "leads_3m": null, "opps_3m": null, "vendas_3m": null, "percepcao_3m": null, "motivos_top": null, "motivo_inferido": "Não identificado (revisar caso a caso)", "plano_sugerido": "Diagnóstico aprofundado · entrevista de churn · escalonamento ao líder", "sentimento": "Sem dados", "quadrante": "sem_dados", "resultado_mapeado": "sem dados", "vs_benchmark": "sem dados"}, {"account_raw": "CIMENTO NASSAU", "cs": "Rafael Ferreira", "nota": 8.0, "n_calls": 1, "duracao_media": 69.8, "csm_grr": null, "mrr": null, "arr": null, "risco_pess": null, "reducao_churn": null, "mes_churn": null, "status_grr": null, "leads_3m": null, "opps_3m": null, "vendas_3m": null, "percepcao_3m": null, "motivos_top": null, "motivo_inferido": "Não identificado (revisar caso a caso)", "plano_sugerido": "Diagnóstico aprofundado · entrevista de churn · escalonamento ao líder", "sentimento": "Sem dados", "quadrante": "sem_dados", "resultado_mapeado": "sem dados", "vs_benchmark": "sem dados"}, {"account_raw": "TECNOFIT", "cs": "Rafael Ferreira", "nota": 8.0, "n_calls": 2, "duracao_media": 55.0, "csm_grr": null, "mrr": null, "arr": null, "risco_pess": null, "reducao_churn": null, "mes_churn": null, "status_grr": null, "leads_3m": null, "opps_3m": null, "vendas_3m": null, "percepcao_3m": null, "motivos_top": null, "motivo_inferido": "Não identificado (revisar caso a caso)", "plano_sugerido": "Diagnóstico aprofundado · entrevista de churn · escalonamento ao líder", "sentimento": "Sem dados", "quadrante": "sem_dados", "resultado_mapeado": "sem dados", "vs_benchmark": "sem dados"}]}, "Thiago Garcia": {"nota": 6.77, "vs_meta": -1.23, "pct_low": 33.8, "fala_cliente": 36.5, "duracao_media": 37.7, "n_calls": 160, "n_contas": 37, "ofensores": [{"dim": "escuta_ativa", "label": "Escuta ativa", "pct": 61.1, "desc": "Cliente fala <30% · poucas perguntas abertas"}, {"dim": "preparacao", "label": "Preparação prévia", "pct": 33.3, "desc": "Sem contexto, dados ou referência à call anterior"}, {"dim": "geracao_valor", "label": "Geração de valor", "pct": 29.6, "desc": "Sem benchmark, métrica ou recomendação clara"}], "fortalezas": [{"dim": "preparacao", "label": "Preparação prévia", "pct": 97.0}, {"dim": "proximos_passos", "label": "Próximos passos", "pct": 95.5}, {"dim": "geracao_valor", "label": "Geração de valor", "pct": 68.2}], "criticas": [{"account_raw": "Madripel Embalagens", "cs": "Thiago Garcia", "nota": 5.75, "n_calls": 4, "duracao_media": 27.2, "csm_grr": "Rafael Ferreira", "mrr": 7500.0, "arr": 90000.0, "risco_pess": 90000.0, "reducao_churn": "Churn", "mes_churn": "jun.", "status_grr": "FORMALIZADO", "leads_3m": 500.0, "opps_3m": 0.0, "vendas_3m": 0.0, "percepcao_3m": 1.0, "motivos_top": "Time do cliente não utiliza plenamente a solução ou não segue o processo de vendas esperado", "motivo_inferido": "Cliente não aderente / sub-utilização", "plano_sugerido": "Reuniões executivas com sponsor · plano de adoção por usuário", "sentimento": "Péssimo", "quadrante": "q4_risco_critico", "resultado_mapeado": "500 leads · MRR R$ 7K", "vs_benchmark": "Lead→Opp: 0.0% abaixo"}, {"account_raw": "PRESTEX", "cs": "Thiago Garcia", "nota": 5.33, "n_calls": 3, "duracao_media": 23.1, "csm_grr": "Victor Reis", "mrr": 5499.33, "arr": 65991.96, "risco_pess": 65991.96, "reducao_churn": "Churn", "mes_churn": "mai.", "status_grr": "Em RISCO", "leads_3m": 0.0, "opps_3m": 0.0, "vendas_3m": 0.0, "percepcao_3m": 1.0, "motivos_top": "Cliente não compartilha informações; Falta de controle de funil (CRM, Planilha e outras fontes de informação)", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "sentimento": "Péssimo", "quadrante": "q4_risco_critico", "resultado_mapeado": "MRR R$ 5K", "vs_benchmark": "sem dados"}, {"account_raw": "OCTADESK", "cs": "Thiago Garcia", "nota": 6.0, "n_calls": 1, "duracao_media": 19.2, "csm_grr": "Thiago Garcia", "mrr": 9000.0, "arr": 108000.0, "risco_pess": null, "reducao_churn": "Churn", "mes_churn": "abr.", "status_grr": "FORA de risco", "leads_3m": 1092.0, "opps_3m": 0.0, "vendas_3m": 0.0, "percepcao_3m": 2.0, "motivos_top": "Cliente não compartilha informações; Dificuldade em separar o que foi gerado pela Cortex vs. outras fontes", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "sentimento": "Péssimo", "quadrante": "q4_risco_critico", "resultado_mapeado": "1092 leads · MRR R$ 9K", "vs_benchmark": "Lead→Opp: 0.0% abaixo"}], "expansao": [{"account_raw": "ASAAS", "cs": "Thiago Garcia", "nota": 9.25, "n_calls": 4, "duracao_media": 40.4, "csm_grr": null, "mrr": null, "arr": null, "risco_pess": null, "reducao_churn": null, "mes_churn": null, "status_grr": null, "leads_3m": 200.0, "opps_3m": 0.0, "vendas_3m": 0.0, "percepcao_3m": null, "motivos_top": "Início de implantação", "motivo_inferido": "Em fase de implantação - sub-aproveitado", "plano_sugerido": "Acelerar onboarding · validação de target accounts · QBR 30/60/90", "sentimento": "Sem dados", "quadrante": "sem_dados", "resultado_mapeado": "200 leads", "vs_benchmark": "Lead→Opp: 0.0% abaixo"}, {"account_raw": "UPFLUX", "cs": "Thiago Garcia", "nota": 8.57, "n_calls": 7, "duracao_media": 45.1, "csm_grr": null, "mrr": null, "arr": null, "risco_pess": null, "reducao_churn": null, "mes_churn": null, "status_grr": null, "leads_3m": 352.0, "opps_3m": 11.0, "vendas_3m": 0.0, "percepcao_3m": 2.0, "motivos_top": "Cliente não compartilha informações", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "sentimento": "Neutro", "quadrante": "q5_neutro", "resultado_mapeado": "11 opps · 352 leads", "vs_benchmark": "Lead→Opp: 3.1% abaixo"}, {"account_raw": "V360", "cs": "Thiago Garcia", "nota": 8.0, "n_calls": 9, "duracao_media": 47.3, "csm_grr": null, "mrr": null, "arr": null, "risco_pess": null, "reducao_churn": null, "mes_churn": null, "status_grr": null, "leads_3m": 1340.0, "opps_3m": 0.0, "vendas_3m": 0.0, "percepcao_3m": 3.0, "motivos_top": "Dados de vendas desatualizados, incompletos ou registrados de forma diferente; Dificuldade em separar o que foi gerado pela Cortex vs. outras fontes; Início de implantação", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "sentimento": "Bom", "quadrante": "q1_acerto", "resultado_mapeado": "1340 leads", "vs_benchmark": "Lead→Opp: 0.0% abaixo"}, {"account_raw": "VOCKAN", "cs": "Thiago Garcia", "nota": 8.0, "n_calls": 2, "duracao_media": 37.8, "csm_grr": null, "mrr": null, "arr": null, "risco_pess": null, "reducao_churn": null, "mes_churn": null, "status_grr": null, "leads_3m": 199.0, "opps_3m": 0.0, "vendas_3m": 0.0, "percepcao_3m": 2.0, "motivos_top": "Início de implantação", "motivo_inferido": "Em fase de implantação - sub-aproveitado", "plano_sugerido": "Acelerar onboarding · validação de target accounts · QBR 30/60/90", "sentimento": "Neutro", "quadrante": "q5_neutro", "resultado_mapeado": "199 leads", "vs_benchmark": "Lead→Opp: 0.0% abaixo"}]}, "Victor Reis": {"nota": 6.67, "vs_meta": -1.33, "pct_low": 20.5, "fala_cliente": 38.6, "duracao_media": 36.0, "n_calls": 83, "n_contas": 17, "ofensores": [{"dim": "escuta_ativa", "label": "Escuta ativa", "pct": 82.4, "desc": "Cliente fala <30% · poucas perguntas abertas"}, {"dim": "proximos_passos", "label": "Próximos passos", "pct": 70.6, "desc": "Sem responsável + prazo no fechamento"}, {"dim": "preparacao", "label": "Preparação prévia", "pct": 64.7, "desc": "Sem contexto, dados ou referência à call anterior"}], "fortalezas": [{"dim": "proximos_passos", "label": "Próximos passos", "pct": 92.3}, {"dim": "preparacao", "label": "Preparação prévia", "pct": 89.7}, {"dim": "escuta_ativa", "label": "Escuta ativa", "pct": 69.2}], "criticas": [{"account_raw": "BRR Crédito Digital", "cs": "Victor Reis", "nota": 3.42, "n_calls": 12, "duracao_media": 20.0, "csm_grr": "Victor Reis", "mrr": 8000.0, "arr": 96000.0, "risco_pess": 96000.0, "reducao_churn": "Churn", "mes_churn": "jul.", "status_grr": "FORMALIZADO", "leads_3m": 147.0, "opps_3m": 0.0, "vendas_3m": 0.0, "percepcao_3m": 1.0, "motivos_top": "Falta de controle de funil (CRM, Planilha e outras fontes de informação)", "motivo_inferido": "Falta controle de funil (cliente sem CRM)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "sentimento": "Péssimo", "quadrante": "q4_risco_critico", "resultado_mapeado": "147 leads · MRR R$ 8K", "vs_benchmark": "Lead→Opp: 0.0% abaixo"}, {"account_raw": "Almata Química", "cs": "Victor Reis", "nota": 6.5, "n_calls": 6, "duracao_media": 44.7, "csm_grr": "Victor Reis", "mrr": 7954.12, "arr": 95449.44, "risco_pess": 95449.44, "reducao_churn": "Churn", "mes_churn": "mai.", "status_grr": "FORMALIZADO", "leads_3m": 301.0, "opps_3m": 0.0, "vendas_3m": 0.0, "percepcao_3m": 1.0, "motivos_top": "Falta de controle de funil (CRM, Planilha e outras fontes de informação); Início de implantação", "motivo_inferido": "Em fase de implantação - sub-aproveitado", "plano_sugerido": "Acelerar onboarding · validação de target accounts · QBR 30/60/90", "sentimento": "Péssimo", "quadrante": "q4_risco_critico", "resultado_mapeado": "301 leads · MRR R$ 7K", "vs_benchmark": "Lead→Opp: 0.0% abaixo"}], "expansao": [{"account_raw": "CIRION TECHNOLOGIES", "cs": "Victor Reis", "nota": 9.0, "n_calls": 1, "duracao_media": 41.1, "csm_grr": null, "mrr": null, "arr": null, "risco_pess": null, "reducao_churn": null, "mes_churn": null, "status_grr": null, "leads_3m": null, "opps_3m": null, "vendas_3m": null, "percepcao_3m": null, "motivos_top": null, "motivo_inferido": "Não identificado (revisar caso a caso)", "plano_sugerido": "Diagnóstico aprofundado · entrevista de churn · escalonamento ao líder", "sentimento": "Sem dados", "quadrante": "sem_dados", "resultado_mapeado": "sem dados", "vs_benchmark": "sem dados"}, {"account_raw": "GoodStorage", "cs": "Victor Reis", "nota": 9.0, "n_calls": 2, "duracao_media": 37.8, "csm_grr": null, "mrr": null, "arr": null, "risco_pess": null, "reducao_churn": null, "mes_churn": null, "status_grr": null, "leads_3m": 431.0, "opps_3m": 0.0, "vendas_3m": 0.0, "percepcao_3m": null, "motivos_top": "Cliente não compartilha informações", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "sentimento": "Sem dados", "quadrante": "sem_dados", "resultado_mapeado": "431 leads", "vs_benchmark": "Lead→Opp: 0.0% abaixo"}, {"account_raw": "JUNGHEINRICH BRASIL", "cs": "Victor Reis", "nota": 8.0, "n_calls": 1, "duracao_media": 57.1, "csm_grr": null, "mrr": null, "arr": null, "risco_pess": null, "reducao_churn": null, "mes_churn": null, "status_grr": null, "leads_3m": null, "opps_3m": null, "vendas_3m": null, "percepcao_3m": null, "motivos_top": null, "motivo_inferido": "Não identificado (revisar caso a caso)", "plano_sugerido": "Diagnóstico aprofundado · entrevista de churn · escalonamento ao líder", "sentimento": "Sem dados", "quadrante": "sem_dados", "resultado_mapeado": "sem dados", "vs_benchmark": "sem dados"}]}}, "tab6": {"risco_total": 2400967.23, "n_em_risco": 29, "mrr_em_risco": 290443.22000000003, "arr_em_risco": 3499178.4299999997, "n_com_call_analisada": 17, "mes_churn_dist": {"abr.": 13, "jun.": 8, "mai.": 8}, "motivos_inferidos": [{"motivo": "Problema ou falta de dados (cliente não compartilha)", "count": 9}, {"motivo": "Cliente não aderente / sub-utilização", "count": 3}, {"motivo": "Sem outcome demonstrado em 3M", "count": 2}, {"motivo": "Não identificado (revisar caso a caso)", "count": 1}, {"motivo": "Em fase de implantação - sub-aproveitado", "count": 1}, {"motivo": "Falta controle de funil (cliente sem CRM)", "count": 1}], "motivos_macro_historico": [{"motivo": "Uso pontual, baixa recorrência", "logos": 10, "arr": 473440}, {"motivo": "Mudou prioridade de investimento", "logos": 9, "arr": 393963}, {"motivo": "Inadimplência", "logos": 5, "arr": 169814}, {"motivo": "Concorrência oferecendo preços melhores", "logos": 3, "arr": 119930}, {"motivo": "Ausência de funcionalidades", "logos": 2, "arr": 115253}, {"motivo": "Problema ou falta de dados", "logos": 2, "arr": 126007}, {"motivo": "Promessas do discurso de venda não atendidas", "logos": 1, "arr": 102041}, {"motivo": "Fusão, aquisição ou falência", "logos": 2, "arr": 84722}, {"motivo": "Atingiu objetivo da contratação", "logos": 1, "arr": 78000}, {"motivo": "Cliente não aderente", "logos": 2, "arr": 60014}], "exposicao_por_cs": [{"csm": "Thiago Garcia", "n": 8, "risco": 615073.79, "mrr": 83071.37}, {"csm": "Macir Junior", "n": 5, "risco": 605130.24, "mrr": 50427.520000000004}, {"csm": "Victor Reis", "n": 6, "risco": 480221.4, "mrr": 48401.78}, {"csm": "Gabriel Novaes", "n": 3, "risco": 345749.8, "mrr": 47610.38}, {"csm": "Guilherme Vieira", "n": 2, "risco": 264792.0, "mrr": 22066.0}, {"csm": "Rafael Ferreira", "n": 5, "risco": 90000.0, "mrr": 38866.17}], "top_risco": [{"empresa": "SEM PARAR GTMB2B", "csm": "Gabriel Novaes", "cs_call": null, "nota": null, "mrr": 16500.0, "arr": 206834.44, "risco_pess": 206834.44, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Sem call analisada — revisar caso a caso", "plano_sugerido": "Diagnóstico aprofundado · agendar primeira call", "has_call_data": false}, {"empresa": "AZUL LINHAS AÉREAS GTMB2B\n", "csm": "Macir Junior", "cs_call": null, "nota": null, "mrr": 13600.0, "arr": 163200.0, "risco_pess": 163200.0, "mes_churn": "jun.", "reducao_churn": "Churn", "motivo_inferido": "Sem call analisada — revisar caso a caso", "plano_sugerido": "Diagnóstico aprofundado · agendar primeira call", "has_call_data": false}, {"empresa": "BECOMEX", "csm": "Thiago Garcia", "cs_call": null, "nota": null, "mrr": 12620.0, "arr": 151440.0, "risco_pess": 151440.0, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Sem call analisada — revisar caso a caso", "plano_sugerido": "Diagnóstico aprofundado · agendar primeira call", "has_call_data": false}, {"empresa": "DreamShaper GTMB2B (BU: Educbank)", "csm": "Macir Junior", "cs_call": "Macir Junior", "nota": 8.0, "mrr": 12000.0, "arr": 144000.0, "risco_pess": 144000.0, "mes_churn": "jun.", "reducao_churn": "Churn", "motivo_inferido": "Sem outcome demonstrado em 3M", "plano_sugerido": "QBR de diagnóstico de funil · workshop conversão Acc→Opp · plano com vendas do cliente", "has_call_data": true}, {"empresa": "ARMAC GTMB2B", "csm": "Guilherme Vieira", "cs_call": null, "nota": null, "mrr": 11766.0, "arr": 141192.0, "risco_pess": 141192.0, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Sem call analisada — revisar caso a caso", "plano_sugerido": "Diagnóstico aprofundado · agendar primeira call", "has_call_data": false}, {"empresa": "ADT BRASIL GTMB2B", "csm": "Thiago Garcia", "cs_call": "Victor Reis", "nota": 5.75, "mrr": 11583.37, "arr": 139000.44, "risco_pess": 139000.44, "mes_churn": "jun.", "reducao_churn": "Churn", "motivo_inferido": "Não identificado (revisar caso a caso)", "plano_sugerido": "Diagnóstico aprofundado · entrevista de churn · escalonamento ao líder", "has_call_data": true}, {"empresa": "ALICE GTMB2B", "csm": "Gabriel Novaes", "cs_call": "Macir Junior", "nota": 8.0, "mrr": 11576.28, "arr": 138915.36, "risco_pess": 138915.36, "mes_churn": "mai.", "reducao_churn": "Churn", "motivo_inferido": "Sem outcome demonstrado em 3M", "plano_sugerido": "QBR de diagnóstico de funil · workshop conversão Acc→Opp · plano com vendas do cliente", "has_call_data": true}, {"empresa": "GALCORR", "csm": "Macir Junior", "cs_call": "Macir Junior", "nota": 6.0, "mrr": 10520.0, "arr": 126240.0, "risco_pess": 126240.0, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "has_call_data": true}, {"empresa": "GUPY GTMB2B", "csm": "Guilherme Vieira", "cs_call": null, "nota": null, "mrr": 10300.0, "arr": 123600.0, "risco_pess": 123600.0, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Sem call analisada — revisar caso a caso", "plano_sugerido": "Diagnóstico aprofundado · agendar primeira call", "has_call_data": false}, {"empresa": "MWM MOTORES DIESEL NOVOS NEGÓCIOS SI", "csm": "Thiago Garcia", "cs_call": null, "nota": null, "mrr": 9816.0, "arr": 122817.35, "risco_pess": 122817.35, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Sem call analisada — revisar caso a caso", "plano_sugerido": "Diagnóstico aprofundado · agendar primeira call", "has_call_data": false}, {"empresa": "PULSUS GTMB2B", "csm": "Victor Reis", "cs_call": "Thiago Garcia", "nota": 7.33, "mrr": 9750.0, "arr": 117000.0, "risco_pess": 117000.0, "mes_churn": "mai.", "reducao_churn": "Churn", "motivo_inferido": "Falta controle de funil (cliente sem CRM)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "has_call_data": true}, {"empresa": "POSITIVO SOLUÇÕES DIDÁTICAS MARKETING SI", "csm": "Thiago Garcia", "cs_call": null, "nota": null, "mrr": 9318.0, "arr": 111816.0, "risco_pess": 111816.0, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Sem call analisada — revisar caso a caso", "plano_sugerido": "Diagnóstico aprofundado · agendar primeira call", "has_call_data": false}, {"empresa": "GRUPO TPC GTMB2B", "csm": "Victor Reis", "cs_call": "Victor Reis", "nota": 7.0, "mrr": 8830.0, "arr": 105960.0, "risco_pess": 105960.0, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "has_call_data": true}, {"empresa": "DELEND GTMB2B", "csm": "Macir Junior", "cs_call": null, "nota": null, "mrr": 8000.0, "arr": 96000.0, "risco_pess": 96000.0, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Sem call analisada — revisar caso a caso", "plano_sugerido": "Diagnóstico aprofundado · agendar primeira call", "has_call_data": false}, {"empresa": "ACTIVE CLOUD SOLUTIONS GTMB2B\n", "csm": "Victor Reis", "cs_call": "Victor Reis", "nota": 8.25, "mrr": 7985.0, "arr": 95820.0, "risco_pess": 95820.0, "mes_churn": "mai.", "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "has_call_data": true}], "todos_em_risco": [{"empresa": "SEM PARAR GTMB2B", "csm": "Gabriel Novaes", "cs_call": null, "nota": null, "n_calls": 0, "mrr": 16500.0, "arr": 206834.44, "risco_pess": 206834.44, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Sem call analisada — revisar caso a caso", "plano_sugerido": "Diagnóstico aprofundado · agendar primeira call", "has_call_data": false}, {"empresa": "AZUL LINHAS AÉREAS GTMB2B\n", "csm": "Macir Junior", "cs_call": null, "nota": null, "n_calls": 0, "mrr": 13600.0, "arr": 163200.0, "risco_pess": 163200.0, "mes_churn": "jun.", "reducao_churn": "Churn", "motivo_inferido": "Sem call analisada — revisar caso a caso", "plano_sugerido": "Diagnóstico aprofundado · agendar primeira call", "has_call_data": false}, {"empresa": "BECOMEX", "csm": "Thiago Garcia", "cs_call": null, "nota": null, "n_calls": 0, "mrr": 12620.0, "arr": 151440.0, "risco_pess": 151440.0, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Sem call analisada — revisar caso a caso", "plano_sugerido": "Diagnóstico aprofundado · agendar primeira call", "has_call_data": false}, {"empresa": "DreamShaper GTMB2B (BU: Educbank)", "csm": "Macir Junior", "cs_call": "Macir Junior", "nota": 8.0, "n_calls": 6, "mrr": 12000.0, "arr": 144000.0, "risco_pess": 144000.0, "mes_churn": "jun.", "reducao_churn": "Churn", "motivo_inferido": "Sem outcome demonstrado em 3M", "plano_sugerido": "QBR de diagnóstico de funil · workshop conversão Acc→Opp · plano com vendas do cliente", "has_call_data": true}, {"empresa": "ARMAC GTMB2B", "csm": "Guilherme Vieira", "cs_call": null, "nota": null, "n_calls": 0, "mrr": 11766.0, "arr": 141192.0, "risco_pess": 141192.0, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Sem call analisada — revisar caso a caso", "plano_sugerido": "Diagnóstico aprofundado · agendar primeira call", "has_call_data": false}, {"empresa": "ADT BRASIL GTMB2B", "csm": "Thiago Garcia", "cs_call": "Victor Reis", "nota": 5.75, "n_calls": 4, "mrr": 11583.37, "arr": 139000.44, "risco_pess": 139000.44, "mes_churn": "jun.", "reducao_churn": "Churn", "motivo_inferido": "Não identificado (revisar caso a caso)", "plano_sugerido": "Diagnóstico aprofundado · entrevista de churn · escalonamento ao líder", "has_call_data": true}, {"empresa": "ALICE GTMB2B", "csm": "Gabriel Novaes", "cs_call": "Macir Junior", "nota": 8.0, "n_calls": 1, "mrr": 11576.28, "arr": 138915.36, "risco_pess": 138915.36, "mes_churn": "mai.", "reducao_churn": "Churn", "motivo_inferido": "Sem outcome demonstrado em 3M", "plano_sugerido": "QBR de diagnóstico de funil · workshop conversão Acc→Opp · plano com vendas do cliente", "has_call_data": true}, {"empresa": "GALCORR", "csm": "Macir Junior", "cs_call": "Macir Junior", "nota": 6.0, "n_calls": 1, "mrr": 10520.0, "arr": 126240.0, "risco_pess": 126240.0, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "has_call_data": true}, {"empresa": "GUPY GTMB2B", "csm": "Guilherme Vieira", "cs_call": null, "nota": null, "n_calls": 0, "mrr": 10300.0, "arr": 123600.0, "risco_pess": 123600.0, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Sem call analisada — revisar caso a caso", "plano_sugerido": "Diagnóstico aprofundado · agendar primeira call", "has_call_data": false}, {"empresa": "MWM MOTORES DIESEL NOVOS NEGÓCIOS SI", "csm": "Thiago Garcia", "cs_call": null, "nota": null, "n_calls": 0, "mrr": 9816.0, "arr": 122817.35, "risco_pess": 122817.35, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Sem call analisada — revisar caso a caso", "plano_sugerido": "Diagnóstico aprofundado · agendar primeira call", "has_call_data": false}, {"empresa": "PULSUS GTMB2B", "csm": "Victor Reis", "cs_call": "Thiago Garcia", "nota": 7.33, "n_calls": 3, "mrr": 9750.0, "arr": 117000.0, "risco_pess": 117000.0, "mes_churn": "mai.", "reducao_churn": "Churn", "motivo_inferido": "Falta controle de funil (cliente sem CRM)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "has_call_data": true}, {"empresa": "POSITIVO SOLUÇÕES DIDÁTICAS MARKETING SI", "csm": "Thiago Garcia", "cs_call": null, "nota": null, "n_calls": 0, "mrr": 9318.0, "arr": 111816.0, "risco_pess": 111816.0, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Sem call analisada — revisar caso a caso", "plano_sugerido": "Diagnóstico aprofundado · agendar primeira call", "has_call_data": false}, {"empresa": "GRUPO TPC GTMB2B", "csm": "Victor Reis", "cs_call": "Victor Reis", "nota": 7.0, "n_calls": 2, "mrr": 8830.0, "arr": 105960.0, "risco_pess": 105960.0, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "has_call_data": true}, {"empresa": "DELEND GTMB2B", "csm": "Macir Junior", "cs_call": null, "nota": null, "n_calls": 0, "mrr": 8000.0, "arr": 96000.0, "risco_pess": 96000.0, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Sem call analisada — revisar caso a caso", "plano_sugerido": "Diagnóstico aprofundado · agendar primeira call", "has_call_data": false}, {"empresa": "ACTIVE CLOUD SOLUTIONS GTMB2B\n", "csm": "Victor Reis", "cs_call": "Victor Reis", "nota": 8.25, "n_calls": 8, "mrr": 7985.0, "arr": 95820.0, "risco_pess": 95820.0, "mes_churn": "mai.", "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "has_call_data": true}, {"empresa": "ALMATA QUÍMICA GTMB2B", "csm": "Victor Reis", "cs_call": "Victor Reis", "nota": 6.5, "n_calls": 6, "mrr": 7954.12, "arr": 95449.44, "risco_pess": 95449.44, "mes_churn": "mai.", "reducao_churn": "Churn", "motivo_inferido": "Em fase de implantação - sub-aproveitado", "plano_sugerido": "Acelerar onboarding · validação de target accounts · QBR 30/60/90", "has_call_data": true}, {"empresa": "PEOPLEPRO GTMB2B", "csm": "Thiago Garcia", "cs_call": "Thiago Garcia", "nota": 8.0, "n_calls": 4, "mrr": 7500.0, "arr": 90000.0, "risco_pess": 90000.0, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "has_call_data": true}, {"empresa": "MADRIPEL EMBALAGENS GTMB2B", "csm": "Rafael Ferreira", "cs_call": "Thiago Garcia", "nota": 5.75, "n_calls": 4, "mrr": 7500.0, "arr": 90000.0, "risco_pess": 90000.0, "mes_churn": "jun.", "reducao_churn": "Churn", "motivo_inferido": "Cliente não aderente / sub-utilização", "plano_sugerido": "Reuniões executivas com sponsor · plano de adoção por usuário", "has_call_data": true}, {"empresa": "PARKER HANNIFIN MARKETING E INTELIGENCIA DE MERCADO SI", "csm": "Macir Junior", "cs_call": null, "nota": null, "n_calls": 0, "mrr": 6307.52, "arr": 75690.24, "risco_pess": 75690.24, "mes_churn": "jun.", "reducao_churn": "Churn", "motivo_inferido": "Sem call analisada — revisar caso a caso", "plano_sugerido": "Diagnóstico aprofundado · agendar primeira call", "has_call_data": false}, {"empresa": "PRESTEX GTMB2B", "csm": "Victor Reis", "cs_call": "Thiago Garcia", "nota": 5.33, "n_calls": 3, "mrr": 5499.33, "arr": 65991.96, "risco_pess": 65991.96, "mes_churn": "mai.", "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "has_call_data": true}, {"empresa": "ORACLE DO BRASIL SISTEMAS LTDA GTMB2B", "csm": "Thiago Garcia", "cs_call": "Thiago Garcia", "nota": 7.0, "n_calls": 2, "mrr": 12250.0, "arr": 147000.0, "risco_pess": null, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "has_call_data": true}, {"empresa": "OCTADESK GTMB2B", "csm": "Thiago Garcia", "cs_call": "Thiago Garcia", "nota": 6.0, "n_calls": 1, "mrr": 9000.0, "arr": 108000.0, "risco_pess": null, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "has_call_data": true}, {"empresa": "HYSTER-YALE", "csm": "Thiago Garcia", "cs_call": null, "nota": null, "n_calls": 0, "mrr": 10984.0, "arr": 131808.0, "risco_pess": null, "mes_churn": "abr.", "reducao_churn": "Churn", "motivo_inferido": "Sem call analisada — revisar caso a caso", "plano_sugerido": "Diagnóstico aprofundado · agendar primeira call", "has_call_data": false}, {"empresa": "YOKOHAMA-TWS.COM GTMB2B", "csm": "Victor Reis", "cs_call": "Thiago Garcia", "nota": 7.2, "n_calls": 5, "mrr": 8383.33, "arr": 100599.96, "risco_pess": null, "mes_churn": "jun.", "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "has_call_data": true}, {"empresa": "GOOROOCREDITO GTMB2B", "csm": "Rafael Ferreira", "cs_call": "Rafael Ferreira", "nota": 6.17, "n_calls": 6, "mrr": 8833.0, "arr": 105996.0, "risco_pess": null, "mes_churn": "jun.", "reducao_churn": "Churn", "motivo_inferido": "Cliente não aderente / sub-utilização", "plano_sugerido": "Reuniões executivas com sponsor · plano de adoção por usuário", "has_call_data": true}, {"empresa": "ELETROBRAS MARKETING SI", "csm": "Gabriel Novaes", "cs_call": null, "nota": null, "n_calls": 0, "mrr": 19534.1, "arr": 234409.2, "risco_pess": null, "mes_churn": "jun.", "reducao_churn": "Churn", "motivo_inferido": "Sem call analisada — revisar caso a caso", "plano_sugerido": "Diagnóstico aprofundado · agendar primeira call", "has_call_data": false}, {"empresa": "DEEP ESG GTMB2B", "csm": "Rafael Ferreira", "cs_call": "Rafael Ferreira", "nota": 6.5, "n_calls": 2, "mrr": 7354.17, "arr": 88250.04, "risco_pess": null, "mes_churn": "mai.", "reducao_churn": "Churn", "motivo_inferido": "Problema ou falta de dados (cliente não compartilha)", "plano_sugerido": "Setup de integração CRM/HubSpot · workshop de mensuração com cliente", "has_call_data": true}, {"empresa": "SPFLEX MANGUEIRAS E CONEXÕES GTMB2B", "csm": "Rafael Ferreira", "cs_call": "Rafael Ferreira", "nota": 5.86, "n_calls": 7, "mrr": 7500.0, "arr": 90000.0, "risco_pess": null, "mes_churn": "mai.", "reducao_churn": "Churn", "motivo_inferido": "Cliente não aderente / sub-utilização", "plano_sugerido": "Reuniões executivas com sponsor · plano de adoção por usuário", "has_call_data": true}, {"empresa": "PROTEGE PRODUTOS, INOVAÇÃO E INTELIGÊNCIA DE MERCADO SI", "csm": "Rafael Ferreira", "cs_call": null, "nota": null, "n_calls": 0, "mrr": 7679.0, "arr": 92148.0, "risco_pess": null, "mes_churn": "mai.", "reducao_churn": "Churn", "motivo_inferido": "Sem call analisada — revisar caso a caso", "plano_sugerido": "Diagnóstico aprofundado · agendar primeira call", "has_call_data": false}]}};
+
+// === Helpers ===
+const $ = (s, e=document) => e.querySelector(s);
+const $$ = (s, e=document) => Array.from(e.querySelectorAll(s));
+function el(html) {
+  // Use <template> para suportar fragmentos restritos (tr/td/li) que o div descarta
+  const tpl = document.createElement('template');
+  tpl.innerHTML = html.trim();
+  return tpl.content.firstElementChild;
+}
+function fmtBrl(v) { if (v == null) return '—'; if (v >= 1000000) return 'R$ ' + (v/1000000).toFixed(2).replace('.', ',') + 'M'; if (v >= 1000) return 'R$ ' + Math.round(v/1000) + 'K'; return 'R$ ' + Math.round(v); }
+function fmtNum(v, d=1) { if (v == null) return '—'; return Number(v).toFixed(d).replace('.', ','); }
+function fmtPct(v) { if (v == null) return '—'; return Number(v).toFixed(1).replace('.', ',') + '%'; }
+function pillForTerm(t) { if (!t) return '<span class="pill neutral">—</span>'; const c = {'Bom':'green','Ótimo':'green','Neutro':'amber','Ruim':'red','Péssimo':'red','Sem dados':'neutral'}[t] || 'neutral'; return `<span class="pill ${c}">${t}</span>`; }
+
+// === HEADER META ===
+$('#header-meta').textContent = `${DATA.meta.janela} · ${DATA.meta.n_calls} calls válidas · ${DATA.meta.n_css} CSMs · ${DATA.meta.n_contas_calls} contas atendidas`;
+
+// === TAB 1: EXECUÇÃO ===
+function renderExec() {
+  const t = DATA.tab1;
+  const c = $('#tab-exec');
+  c.innerHTML = '';
+
+  // Cards de cobertura
+  c.appendChild(el(`<div class="section-label">Cobertura — base de contas atendidas (${t.n_contas} contas)</div>`));
+  const cards = el(`<div class="card-grid cols-4"></div>`);
+  cards.appendChild(el(`
+    <div class="card green">
+      <span class="badge green">cobertura de cliente</span>
+      <div class="label">Contas com calls no período</div>
+      <div class="big">${t.n_contas}</div>
+      <div class="sublabel">100% das contas commercial em pasta</div>
+    </div>`));
+  cards.appendChild(el(`
+    <div class="card amber">
+      <span class="badge amber">cobertura estruturada</span>
+      <div class="label">Contas com pelo menos 1 call ≥6</div>
+      <div class="big">${t.cobertura_estruturada_pct}%</div>
+      <div class="sublabel">${t.contas_estruturadas}/${t.contas_total} contas atingem o piso</div>
+      <div class="bar amber"><div style="width:${t.cobertura_estruturada_pct}%"></div></div>
+    </div>`));
+  const qbrCount = t.milestone_dist.find(m => m.label === 'QBR').count;
+  cards.appendChild(el(`
+    <div class="card red">
+      <div class="label">QBRs identificados</div>
+      <div class="big red">${qbrCount}</div>
+      <div class="sublabel">${qbrCount === 0 ? 'nenhum QBR executado em 468 calls' : 'baixa execução de QBR'}</div>
+    </div>`));
+
+  c.appendChild(cards);
+
+  c.appendChild(el(`<div class="callout amber"><strong>Composição da operação:</strong> Sales Engagement é o tipo de call dominante (${t.milestone_dist[0].pct}% das ${t.n_calls} calls válidas ≥10 min), invertendo o padrão Enterprise. Indica carteira em fase inicial — muitos onboardings e configurações ativos.</div>`));
+
+  // Tabela milestones
+  c.appendChild(el(`<div class="section-label">Cobertura por tipo de call · classificado pelo conteúdo da conversa</div>`));
+  const tbl = el(`<table>
+    <thead><tr><th>Tipo de Call</th><th>Volume</th><th>% do total</th><th>Nota Média</th><th>Duração Média</th><th>Leitura</th></tr></thead>
+    <tbody></tbody>
+  </table>`);
+  const labels = {
+    'Sales Engagement': 'Treinamento, configuração, validação',
+    'Sales Performance': 'Cadência sobre resultados de funil',
+    'QBR': 'Review estratégico trimestral',
+    'Indeterminado': 'Calls curtas, sem conteúdo classificável',
+  };
+  t.milestone_dist.forEach(m => {
+    const notaPill = m.nota >= 7 ? 'green' : m.nota >= 5 ? 'amber' : 'red';
+    tbl.querySelector('tbody').appendChild(el(`<tr>
+      <td><strong>${m.label}</strong></td>
+      <td>${m.count}</td>
+      <td>${m.pct}%</td>
+      <td><span class="pill ${notaPill}">${fmtNum(m.nota, 2)}</span></td>
+      <td>${fmtNum(m.duracao, 1)} min</td>
+      <td style="color:var(--gray-mid)">${labels[m.label]}</td>
+    </tr>`));
+  });
+  c.appendChild(tbl);
+
+  c.appendChild(el(`<div class="callout blue"><strong>Observação:</strong> Sales Performance só pontua melhor (${t.milestone_dist[1].nota}) porque a forma de avaliar valoriza dados/métricas — naturalmente mais presentes em SP. SE com nota ${t.milestone_dist[0].nota} não necessariamente significa execução pior, mas que falta padrão de capturar evidências didáticas/de validação na conversa.</div>`));
+
+  // Cobertura por CS
+  c.appendChild(el(`<div class="section-label">Cobertura por CS</div>`));
+  const csTbl = el(`<table>
+    <thead><tr><th>CS</th><th>Calls</th><th>Nota Média</th><th>% &lt;7</th><th>Fala Cliente</th><th>Duração Média</th></tr></thead>
+    <tbody></tbody></table>`);
+  t.cs_perf.forEach(r => {
+    const pillNota = r.nota >= 7 ? 'green' : r.nota >= 6 ? 'amber' : 'red';
+    csTbl.querySelector('tbody').appendChild(el(`<tr>
+      <td>${r.cs}</td>
+      <td>${r.n}</td>
+      <td><span class="pill ${pillNota}">${fmtNum(r.nota, 2)}</span></td>
+      <td>${fmtNum(r.pct_low, 1)}%</td>
+      <td>${fmtNum(r.fala_cli, 1)}%</td>
+      <td>${fmtNum(r.duracao, 1)} min</td>
+    </tr>`));
+  });
+  c.appendChild(csTbl);
+}
+
+// === TAB 2: EM ABERTO ===
+function renderAberto() {
+  const t = DATA.tab2;
+  const c = $('#tab-aberto');
+  c.innerHTML = '';
+  c.appendChild(el(`<div class="section-label">Atividades em aberto · contas em risco Q2 sem cadência ativa</div>`));
+  const cards = el(`<div class="card-grid cols-4"></div>`);
+  cards.appendChild(el(`<div class="card red">
+    <div class="label">Contas em risco Q2 sem cadência ativa</div>
+    <div class="big red">${t.n_cadencia_fraca}</div>
+    <div class="sublabel">&lt;3 calls OU sem call há +30 dias</div>
+  </div>`));
+  cards.appendChild(el(`<div class="card amber">
+    <div class="label">Total contas com calls em risco</div>
+    <div class="big">${t.n_em_risco}</div>
+    <div class="sublabel">no Q2 2026 (abr-mai-jun)</div>
+  </div>`));
+  const topMot = (DATA.tab6.motivos_inferidos && DATA.tab6.motivos_inferidos[0]) || null;
+  cards.appendChild(el(`<div class="card blue">
+    <div class="label">Motivo dominante (inferido)</div>
+    <div class="big" style="font-size:18px;line-height:1.3">${topMot ? topMot.motivo : '—'}</div>
+    <div class="sublabel">${topMot ? topMot.count + ' contas · inferido do CSV GTM + scorecard' : '—'}</div>
+  </div>`));
+  cards.appendChild(el(`<div class="card amber">
+    <div class="label">Reanálise prioritária</div>
+    <div class="big">${t.contas_cadencia_fraca.length}</div>
+    <div class="sublabel">contas listadas abaixo</div>
+  </div>`));
+  c.appendChild(cards);
+
+  c.appendChild(el(`<div class="callout amber"><strong>Como interpretar:</strong> contas em Churn ou Redução no Q2 cuja cadência de call é insuficiente — ou tem &lt;3 calls no período Jan-Abr, ou a última call foi há mais de 30 dias da virada do mês. São casos onde o salvamento exige reanálise antes do fim do aviso prévio.</div>`));
+
+  c.appendChild(el(`<div class="section-label">Contas em risco Q2 sem cadência ativa · prioridade alta</div>`));
+  const tbl = el(`<table><thead><tr>
+    <th>Cliente</th><th>CS</th><th>Nota</th><th>Nº Calls</th><th>Dias s/ call</th><th>Mês Churn</th><th>Motivo Inferido</th><th>Risco (R$)</th><th>Plano Sugerido</th>
+  </tr></thead><tbody></tbody></table>`);
+  t.contas_cadencia_fraca.forEach(r => {
+    const pillNota = r.nota == null ? 'neutral' : r.nota >= 7 ? 'green' : r.nota >= 6 ? 'amber' : 'red';
+    tbl.querySelector('tbody').appendChild(el(`<tr class="warn">
+      <td><strong>${r.account_raw}</strong></td>
+      <td>${r.cs || '—'}</td>
+      <td>${r.nota == null ? '—' : '<span class="pill '+pillNota+'">'+fmtNum(r.nota,2)+'</span>'}</td>
+      <td>${r.n_calls ?? '—'}</td>
+      <td>${r.dias_sem_call ?? '—'}</td>
+      <td>${r.mes_churn || '—'}</td>
+      <td style="color:var(--gray-mid)">${r.motivo_inferido || '—'}</td>
+      <td><span class="pill red">${fmtBrl(r.risco_pess)}</span></td>
+      <td style="color:var(--gray-mid)">${r.plano_sugerido || '—'}</td>
+    </tr>`));
+  });
+  c.appendChild(tbl);
+
+  c.appendChild(el(`<div class="section-label">Todas as contas em risco Q2 com calls analisadas</div>`));
+  const tbl2 = el(`<table><thead><tr>
+    <th>Cliente</th><th>CS</th><th>CSM (GRR)</th><th>Nota</th><th>Mês Churn</th><th>Tipo</th><th>Motivo Inferido</th><th>Risco (R$)</th><th>Plano Sugerido</th>
+  </tr></thead><tbody></tbody></table>`);
+  t.todas_em_risco.slice(0, 30).forEach(r => {
+    const pillNota = r.nota == null ? 'neutral' : r.nota >= 7 ? 'green' : r.nota >= 6 ? 'amber' : 'red';
+    const tipoPill = r.reducao_churn === 'Churn' ? 'red' : 'amber';
+    tbl2.querySelector('tbody').appendChild(el(`<tr>
+      <td><strong>${r.account_raw}</strong></td>
+      <td>${r.cs || '—'}</td>
+      <td>${r.csm_grr || '—'}</td>
+      <td>${r.nota == null ? '—' : '<span class="pill '+pillNota+'">'+fmtNum(r.nota,2)+'</span>'}</td>
+      <td>${r.mes_churn || '—'}</td>
+      <td><span class="pill ${tipoPill}">${r.reducao_churn || '—'}</span></td>
+      <td style="color:var(--gray-mid)">${r.motivo_inferido || '—'}</td>
+      <td>${fmtBrl(r.risco_pess)}</td>
+      <td style="color:var(--gray-mid)">${r.plano_sugerido || '—'}</td>
+    </tr>`));
+  });
+  c.appendChild(tbl2);
+}
+
+// === TAB 3: QUALIDADE ===
+function renderQual() {
+  const t = DATA.tab3;
+  const c = $('#tab-qual');
+  c.innerHTML = '';
+
+  c.appendChild(el(`<div class="section-label">Nota média geral · ${DATA.meta.n_calls} calls válidas</div>`));
+  const cards = el(`<div class="card-grid cols-4"></div>`);
+  const notaCls = t.nota_media >= 7 ? '' : 'red';
+  cards.appendChild(el(`<div class="card ${notaCls === 'red' ? 'red' : 'amber'}">
+    <div class="label">Nota média</div>
+    <div class="big ${notaCls}">${fmtNum(t.nota_media,2)}</div>
+    <div class="sublabel">meta: 8,0</div>
+  </div>`));
+  cards.appendChild(el(`<div class="card green">
+    <div class="label">Excelentes ≥9</div>
+    <div class="big green">${t.n_high}</div>
+    <div class="sublabel">${t.pct_high}%</div>
+    <div class="bar"><div style="width:${t.pct_high}%"></div></div>
+  </div>`));
+  cards.appendChild(el(`<div class="card blue">
+    <div class="label">Boas 7–8</div>
+    <div class="big">${t.n_mid}</div>
+    <div class="sublabel">${t.pct_mid}%</div>
+    <div class="bar blue"><div style="width:${t.pct_mid}%"></div></div>
+  </div>`));
+  cards.appendChild(el(`<div class="card red">
+    <div class="label">Abaixo &lt;7</div>
+    <div class="big red">${t.n_low}</div>
+    <div class="sublabel">${t.pct_low}%</div>
+    <div class="bar red"><div style="width:${t.pct_low}%"></div></div>
+  </div>`));
+  c.appendChild(cards);
+
+  // Nota por CS vs meta
+  c.appendChild(el(`<div class="section-label">Nota por CS · vs meta 8,0</div>`));
+  const csTbl = el(`<table><thead><tr><th>CS</th><th>Nota</th><th>Meta</th><th>vs Meta</th><th>% &lt;7</th><th>Principal ofensor</th></tr></thead><tbody></tbody></table>`);
+  t.cs_vs_meta.forEach(r => {
+    const pillVs = r.vs_meta >= 0 ? 'green' : r.vs_meta >= -1 ? 'amber' : 'red';
+    csTbl.querySelector('tbody').appendChild(el(`<tr>
+      <td><strong>${r.cs}</strong></td>
+      <td>${fmtNum(r.nota,2)}</td>
+      <td>8,0</td>
+      <td><span class="pill ${pillVs}">${r.vs_meta > 0 ? '+' : ''}${fmtNum(r.vs_meta,2)}</span></td>
+      <td>${fmtNum(r.pct_low,1)}%</td>
+      <td style="color:var(--gray-mid)">${t.cs_principal_ofensor[r.cs] || '—'}</td>
+    </tr>`));
+  });
+  c.appendChild(csTbl);
+
+  const negCS = t.cs_vs_meta.filter(r => r.vs_meta < 0);
+  if (negCS.length) {
+    c.appendChild(el(`<div class="callout red"><strong>Nenhum CS atingiu a meta de 8,0.</strong> ${negCS.sort((a,b)=>a.vs_meta-b.vs_meta)[0].cs} tem o maior gap (${fmtNum(negCS[0].vs_meta,2)}). A operação Commercial está em média ${fmtNum(8.0-t.nota_media,2)} pontos abaixo do esperado.</div>`));
+  }
+
+  // Top ofensores
+  c.appendChild(el(`<div class="section-label">Top ofensores · calls &lt;7</div>`));
+  const ofTbl = el(`<table><thead><tr><th>Dimensão</th><th>% calls impactadas</th><th>Leitura</th></tr></thead><tbody></tbody></table>`);
+  t.ofensores.forEach(o => {
+    ofTbl.querySelector('tbody').appendChild(el(`<tr>
+      <td><strong>${o.label}</strong></td>
+      <td>${o.pct}%</td>
+      <td style="color:var(--gray-mid)">${o.desc}</td>
+    </tr>`));
+  });
+  c.appendChild(ofTbl);
+
+  // Contas em risco + pior execução
+  c.appendChild(el(`<div class="section-label">Contas em risco + pior execução</div>`));
+  const piorTbl = el(`<table><thead><tr><th>Cliente</th><th>CS</th><th>Nota</th><th>Tipo</th><th>Motivo Inferido</th><th>Risco</th></tr></thead><tbody></tbody></table>`);
+  t.piores_risco.forEach(r => {
+    const pillNota = r.nota >= 7 ? 'green' : r.nota >= 6 ? 'amber' : 'red';
+    piorTbl.querySelector('tbody').appendChild(el(`<tr>
+      <td><strong>${r.account_raw}</strong></td>
+      <td>${r.cs}</td>
+      <td><span class="pill ${pillNota}">${fmtNum(r.nota,2)}</span></td>
+      <td><span class="pill red">${r.reducao_churn || '—'}</span></td>
+      <td style="color:var(--gray-mid)">${r.motivo_inferido}</td>
+      <td>${fmtBrl(r.risco_pess)}</td>
+    </tr>`));
+  });
+  c.appendChild(piorTbl);
+
+  // Melhores notas
+  c.appendChild(el(`<div class="section-label">Melhores notas · candidatas a expansão</div>`));
+  const expTbl = el(`<table><thead><tr><th>Cliente</th><th>CS</th><th>Nota</th><th>Sentimento</th><th>Vendas 3M</th><th>MRR</th></tr></thead><tbody></tbody></table>`);
+  t.expansao.forEach(r => {
+    expTbl.querySelector('tbody').appendChild(el(`<tr>
+      <td><strong>${r.account_raw}</strong></td>
+      <td>${r.cs}</td>
+      <td><span class="pill green">${fmtNum(r.nota,2)}</span></td>
+      <td>${pillForTerm(r.sentimento)}</td>
+      <td>${r.vendas_3m ?? '—'}</td>
+      <td>${fmtBrl(r.mrr)}</td>
+    </tr>`));
+  });
+  c.appendChild(expTbl);
+}
+
+// === TAB 4: QUALIDADE × RESULTADO ===
+function renderQRes() {
+  const t = DATA.tab4;
+  const c = $('#tab-qres');
+  c.innerHTML = '';
+
+  c.appendChild(el(`<div class="section-label">Leitura do quadrante · execução vs resultado do cliente</div>`));
+  const cards = el(`<div class="card-grid cols-4"></div>`);
+  cards.appendChild(el(`<div class="card green">
+    <span class="badge green">execução boa + resultado ok</span>
+    <div class="label">Expansão / case</div>
+    <div class="big">${t.quad_counts.q1_acerto || 0}</div>
+    <div class="sublabel">candidatas a replicar padrão</div>
+  </div>`));
+  cards.appendChild(el(`<div class="card blue">
+    <span class="badge blue">execução boa + resultado travado</span>
+    <div class="label">Investigar conversão</div>
+    <div class="big">${t.quad_counts.q2_investigar || 0}</div>
+    <div class="sublabel">mismatch ICP ou esteira</div>
+  </div>`));
+  cards.appendChild(el(`<div class="card red">
+    <span class="badge red">execução fraca + resultado ruim</span>
+    <div class="label">Risco total</div>
+    <div class="big red">${t.quad_counts.q4_risco_critico || 0}</div>
+    <div class="sublabel">salvamento prioritário</div>
+  </div>`));
+  cards.appendChild(el(`<div class="card amber">
+    <span class="badge amber">execução fraca + cliente feliz</span>
+    <div class="label">Risco silencioso</div>
+    <div class="big">${t.quad_counts.q3_risco_latente || 0}</div>
+    <div class="sublabel">churn velado · padronizar</div>
+  </div>`));
+  c.appendChild(cards);
+
+  c.appendChild(el(`<div class="callout blue"><strong>Quadrante mais valioso: execução boa + resultado travado.</strong> Os CSMs estão entregando bem, mas o problema é o funil do cliente — não a jornada. Diagnóstico de conversão é o próximo passo.</div>`));
+
+  c.appendChild(el(`<div class="section-label">Mapeamento completo</div>`));
+  const tbl = el(`<table><thead><tr>
+    <th>Cliente</th><th>CS</th><th>Nota</th><th>Sentimento</th><th>Resultado Mapeado</th><th>VS Benchmark</th><th>Quadrante</th>
+  </tr></thead><tbody></tbody></table>`);
+  t.mapeamento.forEach(r => {
+    const pillNota = r.nota == null ? 'neutral' : r.nota >= 7 ? 'green' : r.nota >= 6 ? 'amber' : 'red';
+    const qLabels = {q1_acerto:['expandir','green'], q2_investigar:['investigar','blue'],
+                     q3_risco_latente:['risco silencioso','amber'], q4_risco_critico:['risco total','red'],
+                     q5_neutro:['manter','blue'], q6_atencao:['atenção','amber']};
+    const [qLbl, qCol] = qLabels[r.quadrante] || ['—', 'neutral'];
+    tbl.querySelector('tbody').appendChild(el(`<tr>
+      <td><strong>${r.account_raw}</strong></td>
+      <td>${r.cs}</td>
+      <td>${r.nota == null ? '—' : '<span class="pill '+pillNota+'">'+fmtNum(r.nota,2)+'</span>'}</td>
+      <td>${pillForTerm(r.sentimento)}</td>
+      <td style="color:var(--gray-mid)">${r.resultado_mapeado || '—'}</td>
+      <td style="color:var(--gray-mid)">${r.vs_benchmark || '—'}</td>
+      <td><span class="pill ${qCol}">${qLbl}</span></td>
+    </tr>`));
+  });
+  c.appendChild(tbl);
+
+  c.appendChild(el(`<div class="callout amber"><strong>Benchmark B2B de referência:</strong> Lead→Opp 10-15% · Opp→Venda 15-25% · Lead→Venda 1-3%. Contas marcadas como "abaixo" precisam de diagnóstico — não é a CS, é o funil do cliente.</div>`));
+}
+
+// === TAB 5: QUALIDADE POR CS ===
+function renderQCS() {
+  const t = DATA.tab5;
+  const c = $('#tab-qcs');
+  c.innerHTML = '';
+
+  c.appendChild(el(`<div class="section-label">Visão por CS · qualidade, cobertura e contas prioritárias</div>`));
+  const grid = el(`<div class="cs-cards"></div>`);
+  Object.entries(t).forEach(([cs, d]) => {
+    const card = el(`<div class="cs-card">
+      <h3>${cs}</h3>
+      <div class="vs">Nota ${fmtNum(d.nota,2)} · meta 8,0 · gap ${d.vs_meta > 0 ? '+':''}${fmtNum(d.vs_meta,2)} · ${fmtNum(d.pct_low,1)}% calls &lt;7</div>
+    </div>`);
+
+    // Top ofensores
+    card.appendChild(el(`<h4>▼ Top ofensores</h4>`));
+    d.ofensores.forEach(o => {
+      card.appendChild(el(`<div class="list-item">
+        <span class="arrow down">▼</span>
+        <span><strong>${o.label}</strong> (${o.pct}%)</span>
+      </div>`));
+    });
+
+    // Fortalezas
+    if (d.fortalezas.length) {
+      card.appendChild(el(`<h4>▲ O que diferencia as calls boas</h4>`));
+      d.fortalezas.forEach(o => {
+        card.appendChild(el(`<div class="list-item">
+          <span class="arrow up">▲</span>
+          <span>${o.label} em ${o.pct}% das calls altas</span>
+        </div>`));
+      });
+    }
+
+    // Contas em risco
+    if (d.criticas && d.criticas.length) {
+      card.appendChild(el(`<h4>⚠ Contas em risco · cobertura baixa</h4>`));
+      d.criticas.forEach(r => {
+        card.appendChild(el(`<div class="conta-line">
+          <span class="pill red">crítico</span>
+          <span><strong>${r.account_raw}</strong> · ${fmtBrl(r.risco_pess)} · ${r.reducao_churn} · nota ${fmtNum(r.nota,2)}</span>
+        </div>`));
+      });
+    }
+
+    // Expansão
+    if (d.expansao && d.expansao.length) {
+      card.appendChild(el(`<h4>★ Expansão</h4>`));
+      d.expansao.forEach(r => {
+        card.appendChild(el(`<div class="conta-line">
+          <span class="pill green">expandir</span>
+          <span><strong>${r.account_raw}</strong> · nota ${fmtNum(r.nota,2)} · ${r.sentimento || '—'}</span>
+        </div>`));
+      });
+    }
+
+    grid.appendChild(card);
+  });
+  c.appendChild(grid);
+
+  // Resumo comparativo
+  c.appendChild(el(`<div class="section-label">Resumo comparativo · 4 CSMs</div>`));
+  const csmList = Object.keys(t);
+  const tbl = el(`<table><thead><tr><th>Dimensão</th>${csmList.map(cs => `<th>${cs.split(' ')[0]}</th>`).join('')}</tr></thead><tbody></tbody></table>`);
+  const dims = [
+    ['Nota média', cs => fmtNum(t[cs].nota, 2)],
+    ['Gap vs meta', cs => (t[cs].vs_meta > 0 ? '+' : '') + fmtNum(t[cs].vs_meta, 2)],
+    ['% calls < 7', cs => fmtNum(t[cs].pct_low, 1) + '%'],
+    ['Fala cliente', cs => fmtNum(t[cs].fala_cliente, 1) + '%'],
+    ['Duração média', cs => fmtNum(t[cs].duracao_media, 1) + ' min'],
+    ['Maior ofensor', cs => t[cs].ofensores[0]?.label || '—'],
+    ['Contas críticas (Q2 risco)', cs => t[cs].criticas?.length || 0],
+    ['Candidatas expansão', cs => t[cs].expansao?.length || 0],
+  ];
+  dims.forEach(([dim, fn]) => {
+    tbl.querySelector('tbody').appendChild(el(`<tr>
+      <td><strong>${dim}</strong></td>
+      ${csmList.map(cs => `<td>${fn(cs)}</td>`).join('')}
+    </tr>`));
+  });
+  c.appendChild(tbl);
+}
+
+// === TAB 6: RISCO CHURN ===
+function renderRisco() {
+  const t = DATA.tab6;
+  const c = $('#tab-risco');
+  c.innerHTML = '';
+
+  c.appendChild(el(`<div class="section-label">Exposição Q2 2026 · Commercial</div>`));
+  const cards = el(`<div class="card-grid cols-4"></div>`);
+  cards.appendChild(el(`<div class="card red">
+    <div class="label">Commercial Q2 em risco</div>
+    <div class="big red">${fmtBrl(t.risco_total)}</div>
+    <div class="sublabel">${t.n_em_risco} contas · ARR</div>
+  </div>`));
+  cards.appendChild(el(`<div class="card amber">
+    <div class="label">MRR em risco</div>
+    <div class="big">${fmtBrl(t.mrr_em_risco)}</div>
+    <div class="sublabel">/mês · receita recorrente</div>
+  </div>`));
+  cards.appendChild(el(`<div class="card blue">
+    <div class="label">Contas com calls analisadas</div>
+    <div class="big">${t.n_com_call_analisada}/${t.n_em_risco}</div>
+    <div class="sublabel">${Math.round(t.n_com_call_analisada/t.n_em_risco*100)}% cobertura de evidência</div>
+  </div>`));
+  const dominante = t.motivos_inferidos[0];
+  cards.appendChild(el(`<div class="card red">
+    <div class="label">Motivo dominante</div>
+    <div class="big" style="font-size:14px;line-height:1.3">${dominante?.motivo || '—'}</div>
+    <div class="sublabel">${dominante?.count || 0} contas</div>
+  </div>`));
+  c.appendChild(cards);
+
+  c.appendChild(el(`<div class="callout red"><strong>O padrão de churn não é produto — é cobertura.</strong> A maioria dos motivos inferidos remete a falta de evidência (cliente não compartilha dados de vendas) ou subutilização. Ambos são recuperáveis com cadência ativa de Sales Performance + plano de mensuração.</div>`));
+
+  // Top contas em risco — TODAS
+  c.appendChild(el(`<div class="section-label">Detalhamento · 29 contas Commercial Q2 em risco</div>`));
+  const tbl = el(`<table class="small-table"><thead><tr>
+    <th>Cliente</th><th>CSM (GRR)</th><th>Tipo</th><th>Mês</th><th>Nota Call</th><th>Risco (pess.)</th><th>MRR</th><th>Motivo Inferido</th><th>Plano Sugerido</th>
+  </tr></thead><tbody></tbody></table>`);
+  t.todos_em_risco.forEach(r => {
+    const pillNota = r.nota == null ? 'neutral' : r.nota >= 7 ? 'green' : r.nota >= 6 ? 'amber' : 'red';
+    const tipoPill = r.reducao_churn === 'Churn' ? 'red' : 'amber';
+    tbl.querySelector('tbody').appendChild(el(`<tr>
+      <td><strong>${r.empresa}</strong></td>
+      <td>${r.csm || '—'}</td>
+      <td><span class="pill ${tipoPill}">${r.reducao_churn || '—'}</span></td>
+      <td>${r.mes_churn || '—'}</td>
+      <td>${r.nota == null ? '<span style="color:var(--gray-soft)">sem call</span>' : '<span class="pill '+pillNota+'">'+fmtNum(r.nota,2)+'</span>'}</td>
+      <td><strong>${fmtBrl(r.risco_pess)}</strong></td>
+      <td>${fmtBrl(r.mrr)}</td>
+      <td style="color:var(--gray-mid);max-width:220px">${r.motivo_inferido || '—'}</td>
+      <td style="color:var(--gray-mid);max-width:260px">${r.plano_sugerido || '—'}</td>
+    </tr>`));
+  });
+  c.appendChild(tbl);
+
+  // Motivos inferidos
+  c.appendChild(el(`<div class="section-label">Motivos inferidos · contas com call analisada</div>`));
+  const motTbl = el(`<table><thead><tr><th>Motivo</th><th># Contas</th><th>% das com call</th></tr></thead><tbody></tbody></table>`);
+  const total = t.motivos_inferidos.reduce((a,b) => a + b.count, 0) || 1;
+  t.motivos_inferidos.forEach(m => {
+    motTbl.querySelector('tbody').appendChild(el(`<tr>
+      <td>${m.motivo}</td>
+      <td>${m.count}</td>
+      <td>${(m.count/total*100).toFixed(1)}%</td>
+    </tr>`));
+  });
+  c.appendChild(motTbl);
+
+  // Histórico macro
+  c.appendChild(el(`<div class="section-label">Histórico · top motivos de churn (2024-2025) · referência</div>`));
+  const histTbl = el(`<table><thead><tr><th>Motivo</th><th># Logos</th><th>ARR perdido</th></tr></thead><tbody></tbody></table>`);
+  t.motivos_macro_historico.forEach(m => {
+    histTbl.querySelector('tbody').appendChild(el(`<tr>
+      <td>${m.motivo}</td>
+      <td>${m.logos}</td>
+      <td>${fmtBrl(m.arr)}</td>
+    </tr>`));
+  });
+  c.appendChild(histTbl);
+
+  c.appendChild(el(`<div class="callout amber"><strong>Alerta executivo:</strong> Os motivos inferidos para o Q2 2026 se alinham aos top 3 históricos (Uso pontual · Falta de dados · Cliente não aderente). O padrão é estrutural — exige correção no momento do onboarding (Sales Engagement) para impedir a próxima safra de churn.</div>`));
+}
+
+// === Tab switching ===
+$$('.tab').forEach(t => {
+  t.addEventListener('click', () => {
+    $$('.tab').forEach(x => x.classList.remove('active'));
+    $$('.tab-content').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    document.getElementById('tab-' + t.dataset.tab).classList.add('active');
+  });
+});
+
+// Render all
+renderExec();
+renderAberto();
+renderQual();
+renderQRes();
+renderQCS();
+renderRisco();
+</script>
+
+</body></html>
